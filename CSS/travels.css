@@ -46,13 +46,10 @@ body{
     background: rgba(0,191,255,0.3);
 }
 .profile{
-    line-height: 200%; list-style: none; background: rgba(0,191,255,0.3);
+    line-height: 200%; list-style: none;
 }
 .profile:hover{
     background: rgba(0,191,255,0.3);
-}
-.a_profile{
-    text-decoration: none;
 }
 .blog{
     line-height: 200%; list-style: none;
@@ -67,10 +64,13 @@ body{
     background: rgba(0,191,255,0.3);
 }
 .travels{
-    line-height: 200%; list-style: none;
+    line-height: 200%; list-style: none; background: rgba(0,191,255,0.3);
 }
 .travels:hover{
     background: rgba(0,191,255,0.3);
+}
+.a_travels{
+    text-decoration: none;
 }
 .QQ{
     width: 100%;
@@ -148,7 +148,7 @@ body{
     top: 0;bottom: 0;left: 12.5%;right: 0;
     margin: auto;
 }
-.button{
+#close{
     position: absolute;
     width: 10%;height: 10%;
     top: 10px;right: 10px;
@@ -164,41 +164,21 @@ body{
     height: 75%;
     top: 120px;left: 12.5%;right: 0;
     margin: auto;
-    border-radius: 48px;
     background: rgba(255,255,255,0.6);
+    border-radius: 48px;
 }
-.imgProfileInner{
+.contents_shade{
     position: absolute;
-    left: 0;top: 0;
-    width: 50%;height: 100%;
-}
-#imgProfile{
-    position: absolute;
-    left: 0;right: 0;top: 0;bottom: 0;
+    width: 97%;height: 97%;
+    top: 0;bottom: 0;left: 0;right: 0;
     margin: auto;
 }
-.btnProfile{
-    position: absolute;
-    width: 82%;height: 7%;
-    left: 0;right: 0;top: 0;bottom: 0;
-    margin: auto;
-    opacity: 0;
+.btnImage{
+
 }
-.wordPfInner{
-    position: absolute;
-    left: 48%;top: 0;
-    width: 50%;height: 100%;
-    text-align: left;
+.btnChangeImg{
+    padding-left: 0;
 }
-.profile_name{
-    font-family: 零零后举个爪;
-    font-size: 36px;
-}
-.profile_content{
-    font-family: 零零后举个爪;
-    font-size: 24px;
-}
-@font-face {
-    font-family: 零零后举个爪;
-    src: url("DesignMaterial/profile_word.ttf");
+.button_left,.button_right{
+    list-style: none;
 }
