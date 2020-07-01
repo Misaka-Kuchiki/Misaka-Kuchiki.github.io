@@ -191,6 +191,10 @@ body{
 .profile_content{
     font-family: 零零后举个爪;
     font-size: 26px;
+    overflow-y: auto;
+}
+.profile_content::-webkit-scrollbar{
+    display: none;
 }
 @font-face {
     font-family: 零零后举个爪;
