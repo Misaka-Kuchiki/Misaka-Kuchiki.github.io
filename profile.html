@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile丨MisakaKuchiki's Website</title>
+    <link rel="icon" href="DesignMaterial/tuba.ico">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        var imgIndex = 1;
+        var imgBg = new Array('mizore-dark.png','nozomi-dark.png');
+        var imgProfileIndex = 0;
+        var imgProfile = new Array('profile_1.jpg','profile_2.jpg','profile_3.jpg','profile_4.jpg');
+        $(function () {
+            ButtonEvent();
+            setInterval(changeBg, 8000);
+        });
+        function changeBg() {
+            if (imgIndex >= imgBg.length) {
+                imgIndex = 0;
+            }
+            $(".BackGround").fadeOut(1000, function () {
+                $(".BackGround").css("background-image", "url(DesignMaterial/" + imgBg[imgIndex] + ")");
+                imgIndex++;
+            });
+            $(".BackGround").fadeIn(1000);
+        }
+        function switchVideo(state) {
+            var div = document.getElementById("video_popup");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : "block";
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+        }
+        function ButtonChangePf(state) {
+            if (state == 'left'){
+                imgProfileIndex--;
+                imgProfileIndex = imgProfileIndex < 0 ? imgProfile.length-1 : imgProfileIndex;
+                document.getElementById('imgProfile').src = 'DesignMaterial/' + imgProfile[imgProfileIndex];
+            }
+            else if(state == 'right'){
+                imgProfileIndex++;
+                imgProfileIndex = imgProfileIndex > imgProfile.length-1 ? 0 : imgProfileIndex
+                document.getElementById('imgProfile').src = 'DesignMaterial/' + imgProfile[imgProfileIndex];
+            }
+        }
+        function ButtonEvent() {
+            $("#imgProfile,#btn").mouseenter(function () {
+                document.getElementById('btn').style.opacity = "1";
+                document.getElementById('btn').style.transitionDuration = "1s";
+            });
+            $("#imgProfile,#btn").mouseleave(function () {
+                document.getElementById('btn').style.opacity = "0";
+                document.getElementById('btn').style.transitionDuration = "1s";
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="BackGround"></div>
+    <div class="floating">
+        <div class="nozomi">
+            <a href="https://misaka-kuchiki.github.io/">
+                <img src="DesignMaterial/nozomi_profile.png" width="100%"  alt="profile">
+            </a>
+        </div>
+        <div class="ID" align="center">
+            <a href="https://misaka-kuchiki.github.io/">
+                <img src="DesignMaterial/ID.png" width="90%" alt="name">
+            </a>
+        </div>
+        <div class="menu_wrapper">
+            <ul class="menu">
+                <a href="https://misaka-kuchiki.github.io/">
+                    <li class="home">
+                        <img src="DesignMaterial/HOME.png" width="80%" alt="home">
+                    </li>
+                </a>
+                <a class="a_profile" href="https://misaka-kuchiki.github.io/profile.html">
+                    <li class="profile">
+                        <img src="DesignMaterial/PROFILE.png" width="80%" alt="profile">
+                        <img src="DesignMaterial/bluebird.png" width="13%" alt="bluebird">
+                    </li>
+                </a>
+                <a href="https://misaka-kuchiki.github.io/blog.html">
+                    <li class="blog">
+                        <img src="DesignMaterial/BLOG.png" width="80%" alt="blog">
+                    </li>
+                </a>
+                <a href="https://misaka-kuchiki.github.io/study_notes.html">
+                    <li class="study_notes">
+                        <img src="DesignMaterial/STUDY%20NOTES.png" width="80%" alt="study notes">
+                    </li>
+                </a>
+                <a href="https://misaka-kuchiki.github.io/photos.html">
+                    <li class="photos">
+                        <img src="DesignMaterial/PHOTOS.png" width="80%" alt="photos">
+                    </li>
+                </a>
+            </ul>
+            <div class="QQ" align="center">
+                <img src="DesignMaterial/QQ.png" width="60%" alt="QRCode">
+            </div>
+            <div class="sns" align="center">
+                <div class="weibo">
+                    <a class="a_weibo" target="_blank" href="https://weibo.com/3487631474/profile?topnav=1&wvr=6&is_all=1">
+                        <img class="img_weibo" src="DesignMaterial/weibo.png" alt="weibo">
+                    </a>
+                </div>
+                <div class="twitter">
+                    <a class="a_twitter" target="_blank" href="https://twitter.com/misakakuchiki">
+                        <img class="img_twitter" src="DesignMaterial/twitter.png" alt="twitter">
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a class="a_instagram" target="_blank" href="https://www.instagram.com/misakakuchiki/">
+                        <img class="img_instagram" src="DesignMaterial/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="bilibili">
+                    <a class="a_bilibili" target="_blank" href="https://space.bilibili.com/2392866">
+                        <img class="img_bilibili" src="DesignMaterial/bilibili.png" alt="bilibili">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="word" align="center">
+            <a href="javascript:void(0)" onclick="switchVideo('play');">
+                <img class="img_word" src="DesignMaterial/word.png">
+            </a>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="imgProfileInner">
+            <img id="imgProfile" src="DesignMaterial/profile_1.jpg" width="85%">
+            <div class="btnProfile" id="btn">
+                <a href="javascript:void(0)" onclick="ButtonChangePf('left')">
+                    <img src="DesignMaterial/button_left.png" height="100%" align="left">
+                </a>
+                <a href="javascript:void(0)" onclick="ButtonChangePf('right')">
+                    <img src="DesignMaterial/button_right.png" height="100%" align="right">
+                </a>
+            </div>
+        </div>
+        <div class="wordPfInner">
+            <h3 class="profile_name">
+                圈名：御坂朽木（Misaka Kuchiki）
+            </h3>
+            <h3 class="profile_content">
+                感谢光临鄙站，这里木头。23岁，是学生。
+                <br>
+                <br>
+                广东珠海人，2016年珠海市第一中学毕业，2020年深圳市深圳大学物联网工程（IoT）专业毕业，目前以留日<s>跑活</s>进修计算机视觉研究为目标努力中。
+                <br>
+                <br>
+                菜鸡码农，会但不精于C、C++、Java、HTML、SQL、python等语言。如你所见，就连这个主页都是这么地低级简陋。
+                <br>
+                <br>
+                声优厨，户松遥、东山奈央等。作画厨，骨头社、霸权社、京阿尼等。巡礼厨，宇治市、高山市、川越市等。J-POP厨，包括但不限于LiSA、Aimer、ONE OK ROCK等。
+                <br>
+                <br>
+                闲暇时听听歌、看看电影、打打游戏，偶尔飞日本巡巡礼、见见小偶像、听听演唱会。当然工作学习时仍需专注和努力，因为想要变得更好。
+                <br>
+                <br>
+                みたことない景色へ、まだしらない世界へ。
+            </h3>
+        </div>
+    </div>
+    <div class="popup_shade" id="video_popup">
+        <div class="popup">
+            <iframe src="https://www.youtube.com/embed/3YmF-DWvE4I?enablejsapi=1" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    width="100%" height="100%"></iframe>
+        </div>
+        <div class="button" id="close">
+            <a href="javascript:void(0)" onclick="switchVideo('hide')">
+                <img class="img_close" src="DesignMaterial/close.png">
+            </a>
+        </div>
+    </div>
+    <footer id="footer">
+            <span class="copyright">
+                © MisakaKuchiki.2020-2020.
+            </span>
+    </footer>
+</div>
+</body>
+</html>

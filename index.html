@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MisakaKuchiki's Website</title>
+    <link rel="icon" href="DesignMaterial/tuba.ico">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        var imgIndex = 1;
+        var imgBg = new Array('mizore-dark.png','nozomi-dark.png');
+        $(function () {
+            setInterval(changeBg, 8000);
+        });
+        function changeBg() {
+            if (imgIndex >= imgBg.length) {
+                imgIndex = 0;
+            }
+            $(".BackGround").fadeOut(1000, function () {
+                $(".BackGround").css("background-image", "url(DesignMaterial/" + imgBg[imgIndex] + ")");
+                imgIndex++;
+            });
+            $(".BackGround").fadeIn(1000);
+        }
+        function switchVideo(state) {
+            var div = document.getElementById("video_popup");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : "block";
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="BackGround"></div>
+    <div class="floating">
+        <div class="nozomi">
+            <a href="https://misaka-kuchiki.github.io/">
+                <img src="DesignMaterial/nozomi_profile.png" width="100%"  alt="profile">
+            </a>
+        </div>
+        <div class="ID" align="center">
+            <a href="https://misaka-kuchiki.github.io/">
+                <img src="DesignMaterial/ID.png" width="90%" alt="name">
+            </a>
+        </div>
+        <div class="menu_wrapper">
+            <ul class="menu">
+                <a class="a_home" href="https://misaka-kuchiki.github.io/">
+                    <li class="home">
+                        <img src="DesignMaterial/HOME.png" width="80%" alt="home">
+                        <img src="DesignMaterial/bluebird.png" width="13%" alt="bluebird">
+                    </li>
+                </a>
+                <a href="https://misaka-kuchiki.github.io/profile.html">
+                    <li class="profile">
+                        <img src="DesignMaterial/PROFILE.png" width="80%" alt="profile">
+                    </li>
+                </a>
+                <a href="https://misaka-kuchiki.github.io/blog.html">
+                    <li class="blog">
+                        <img src="DesignMaterial/BLOG.png" width="80%" alt="blog">
+                    </li>
+                </a>
+                <a href="https://misaka-kuchiki.github.io/study_notes.html">
+                    <li class="study_notes">
+                        <img src="DesignMaterial/STUDY%20NOTES.png" width="80%" alt="study notes">
+                    </li>
+                </a>
+                <a href="https://misaka-kuchiki.github.io/photos.html">
+                    <li class="photos">
+                        <img src="DesignMaterial/PHOTOS.png" width="80%" alt="photos">
+                    </li>
+                </a>
+            </ul>
+            <div class="QQ" align="center">
+                <img src="DesignMaterial/QQ.png" width="60%" alt="QRCode">
+            </div>
+            <div class="sns" align="center">
+                <div class="weibo">
+                    <a class="a_weibo" target="_blank" href="https://weibo.com/3487631474/profile?topnav=1&wvr=6&is_all=1">
+                        <img class="img_weibo" src="DesignMaterial/weibo.png" alt="weibo">
+                    </a>
+                </div>
+                <div class="twitter">
+                    <a class="a_twitter" target="_blank" href="https://twitter.com/misakakuchiki">
+                        <img class="img_twitter" src="DesignMaterial/twitter.png" alt="twitter">
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a class="a_instagram" target="_blank" href="https://www.instagram.com/misakakuchiki/">
+                        <img class="img_instagram" src="DesignMaterial/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="bilibili">
+                    <a class="a_bilibili" target="_blank" href="https://space.bilibili.com/2392866">
+                        <img class="img_bilibili" src="DesignMaterial/bilibili.png" alt="bilibili">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="word" align="center">
+            <a href="javascript:void(0)" onclick="switchVideo('play');">
+                <img class="img_word" src="DesignMaterial/word.png">
+            </a>
+        </div>
+    </div>
+    <div class="contents"></div>
+    <div class="popup_shade" id="video_popup">
+        <div class="popup">
+            <iframe src="https://www.youtube.com/embed/3YmF-DWvE4I?enablejsapi=1" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    width="100%" height="100%"></iframe>
+        </div>
+        <div class="button" id="close">
+            <a href="javascript:void(0)" onclick="switchVideo('hide')">
+                <img class="img_close" src="DesignMaterial/close.png">
+            </a>
+        </div>
+    </div>
+    <footer id="footer">
+            <span class="copyright">
+                © MisakaKuchiki.2020-2020.
+            </span>
+    </footer>
+</div>
+</body>
+</html>

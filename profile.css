@@ -1,0 +1,202 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    position: relative;
+    height: 1008px;
+    min-width: 1600px;
+}
+.BackGround{
+    background-image: url(DesignMaterial/mizore-dark.png);
+    position: fixed;
+    left: 0px;top: 0px;
+    width: 100%;height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
+.floating{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height:100%;
+    width:11.2%;
+    background:rgba(275,275,275,0.60);
+}
+.nozomi{
+    width: 100%;
+}
+.ID{
+    width: 100%;
+}
+.menu_wrapper{
+    width: 100%;
+}
+.menu{
+    padding-left: 0;
+}
+.home{
+    line-height: 200%; list-style: none;
+}
+.home:hover{
+    background: rgba(0,191,255,0.3);
+}
+.profile{
+    line-height: 200%; list-style: none; background: rgba(0,191,255,0.3);
+}
+.profile:hover{
+    background: rgba(0,191,255,0.3);
+}
+.a_profile{
+    text-decoration: none;
+}
+.blog{
+    line-height: 200%; list-style: none;
+}
+.blog:hover{
+    background: rgba(0,191,255,0.3);
+}
+.study_notes{
+    line-height: 200%; list-style: none;
+}
+.study_notes:hover{
+    background: rgba(0,191,255,0.3);
+}
+.photos{
+    line-height: 200%; list-style: none;
+}
+.photos:hover{
+    background: rgba(0,191,255,0.3);
+}
+.QQ{
+    width: 100%;
+}
+.sns{
+    width: 100%;
+}
+.weibo{
+    width: 25%;float: left;
+}
+.a_weibo{
+    text-decoration: none;
+}
+.img_weibo{
+    width: auto; height: auto;max-width: 100%; max-height: 100%;
+}
+.twitter{
+    width: 25%;float: left;
+}
+.a_twitter{
+    text-decoration: none;
+}
+.img_twitter{
+    width: auto; height: auto;max-width: 100%; max-height: 100%;
+}
+.instagram{
+    width: 25%;float: left;
+}
+.a_instagram{
+    text-decoration: none;
+}
+.img_instagram{
+    width: auto; height: auto;max-width: 100%; max-height: 100%;
+}
+.bilibili{
+    width: 25%;float: left;
+}
+.a_bilibili{
+    text-decoration: none;
+}
+.img_bilibili{
+    width: auto; height: auto;max-width: 100%; max-height: 100%;
+}
+.word{
+    width: 100%;
+}
+.img_word{
+    width: auto; height: auto; max-width: 100%; max-height: 100%;
+}
+#footer{
+    position: absolute;
+    width: 100%;
+    top: 97%;
+    font-size: 1vw;
+    text-align: center;
+}
+.popup_shade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.popup{
+    position: absolute;
+    width: 72%;
+    height: 72%;
+    top: 0;bottom: 0;left: 12.5%;right: 0;
+    margin: auto;
+}
+#close{
+    position: absolute;
+    width: 10%;height: 10%;
+    top: 10px;right: 10px;
+    float: right;
+    text-align: right;
+}
+.img_close{
+    width: auto; height: auto; max-width: 100%; max-height: 100%;
+}
+.contents{
+    position: absolute;
+    width: 1200px;
+    height: 75%;
+    top: 0;bottom: 3%;left: 12.5%;right: 0;
+    margin: auto;
+    border-radius: 48px;
+    background: rgba(255,255,255,0.6);
+}
+.imgProfileInner{
+    position: absolute;
+    left: 0;top: 0;
+    width: 50%;height: 100%;
+}
+#imgProfile{
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+}
+.btnProfile{
+    position: absolute;
+    width: 82%;height: 7%;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+    opacity: 0;
+}
+.wordPfInner{
+    position: absolute;
+    left: 48%;top: 0;
+    width: 50%;height: 100%;
+    text-align: left;
+    overflow-y: auto;
+}
+.wordPfInner::-webkit-scrollbar{
+    display: none;
+}
+.profile_name{
+    font-family: 零零后举个爪;
+    font-size: 40px;
+}
+.profile_content{
+    font-family: 零零后举个爪;
+    font-size: 26px;
+}
+@font-face {
+    font-family: 零零后举个爪;
+    src: url("DesignMaterial/profile_word.ttf");
+}
