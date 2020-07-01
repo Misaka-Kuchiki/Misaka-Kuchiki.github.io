@@ -4,8 +4,8 @@ body{
 }
 .wrapper{
     position: relative;
-    height: 1080px;
-    min-width: 1280px;
+    height: 1008px;
+    min-width: 1600px;
 }
 .BackGround{
     background-image: url(DesignMaterial/mizore-dark.png);
@@ -24,7 +24,7 @@ body{
     left: 0px;
     top: 0px;
     height:100%;
-    width:12.5%;
+    width:11.2%;
     background:rgba(275,275,275,0.60);
 }
 .nozomi{
@@ -66,10 +66,10 @@ body{
 .study_notes:hover{
     background: rgba(0,191,255,0.3);
 }
-.travels{
+.photos{
     line-height: 200%; list-style: none;
 }
-.travels:hover{
+.photos:hover{
     background: rgba(0,191,255,0.3);
 }
 .QQ{
@@ -126,12 +126,6 @@ body{
     top: 97%;
     font-size: 1vw;
     text-align: center;
-}
-.a_footer{
-    color: black;
-}
-.a_footer:hover{
-    text-decoration: none;
 }
 .popup_shade{
     position: absolute;
