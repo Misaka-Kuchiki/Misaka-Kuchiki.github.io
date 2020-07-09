@@ -11,7 +11,9 @@
     <script src="../../../../js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
         $(function () {
+            $("html, body").animate({scrollTop:0},500);
             showBackTop();
+            handleSidebar();
         });
         function showBackTop() {
             $(window).scroll(function () {
@@ -25,8 +27,52 @@
                 }
             })
         }
+        function handleSidebar() {
+            $(window).scroll(function () {
+                let scroll_top = $(document).scrollTop();
+                console.log(scroll_top);
+                if (scroll_top > 600){
+                    $(".sidebar").css("position","fixed");
+                    $(".sidebar").css("top","120px");
+                }
+                else{
+                    $(".sidebar").css("position","relative");
+                    $(".sidebar").css("top","720px");
+                }
+            })
+        }
         function BackToTop() {
             $("html,body").animate({scrollTop:0},500);
+        }
+        function jumpToTitle(state) {
+            if (state == 1){
+                let top = $("#1_前言").offset().top - 75;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 2){
+                let top = $("#2_创建项目仓库").offset().top - 75;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 3){
+                let top = $("#3_安装配置Git").offset().top - 75;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 4){
+                let top = $("#4_安装配置Hexo").offset().top - 75;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 5){
+                let top = $("#5_部署至GitHubPages").offset().top - 75;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 6){
+                let top = $("#6_上传自制主页").offset().top - 75;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 7){
+                let top = $("#7_后记").offset().top - 75;
+                $("html, body").animate({scrollTop:top},500);
+            }
         }
     </script>
 </head>
@@ -267,7 +313,51 @@
                 <code>git commit -m "上传说明"</code>
                 <br>
                 <code>git push</code>
+                <br><br>
+                <img src="images/img_29.png" width="60%">
+                <br>
+                如果是第一次上传，在git push后还需要根据提示信息输入自己的GitHub注册邮箱和登录密码。上传完成后，回到GitHub仓库页面，可以看到我们的本地文件已经上传到了仓库中。
+                <br><br>
+                <img src="images/img_30.png" width="100%">
+                <br>
+                此时访问GitHub Pages之前分配给我们的域名，就可以看到自己制作的网站主页了。
+                <br><br>
+                <img src="images/img_31.png" width="100%">
+                <br>
+                至此，个人主页搭建成功，世界范围内的小伙伴都能访问并浏览观赏你的网站了。
             </p>
+            <h1 id="7_后记">7.后记</h1>
+            <p>
+                时光荏苒，互联网的发展带来了大量的用户交互平台，但发展和风险并存，广告充斥屏幕，炸号提心吊胆。自己制作一个个人博客逐渐成为一个不错的选择。GitHub Pages正好为我们每个用户提供了一个域名和相关文件的存储仓库，这让我们省去了租赁域名和维护服务器的成本。Hexo制作博客简易兼容性强，只需掌握相关的指令即可制作。自制上传需要一定的技术，但网页设计也能更加灵活。根据个人实际情况选择吧，也希望这篇文章能够对你有所帮助。
+                <br><br>
+                By：御坂朽木 2020-07-07
+            </p>
+        </div>
+        <div class="sidebar" id="side_bar">
+            <strong>Contents</strong>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(1)">前言</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(2)">创建项目仓库</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(3)">安装配置Git</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(4)">安装配置Hexo</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(5)">部署至GitHub Pages</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(6)">上传自制主页</a>
+                </li>
+                <li>
+                    <a href="#7_后记">后记</a>
+                </li>
+            </ul>
         </div>
     </article>
     <div class="back_top">
