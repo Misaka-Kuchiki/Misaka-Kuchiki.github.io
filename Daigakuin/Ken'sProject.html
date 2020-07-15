@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ken's Project</title>
+    <link rel="icon" href="images/tuba.ico">
+    <link rel="stylesheet" type="text/css" href="Ken'sProject.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        var divIndex = 0;
+        var divNums = 2;
+        function changeDiv(state) {
+            if (state == 'pre'){
+                let i = divIndex - 1;
+                i = i < 0 ? divNums - 1 : i;
+                jumpToDiv(i);
+            }
+            else if (state == 'next'){
+                let i = divIndex + 1;
+                i = i > divNums - 1 ? 0 : i;
+                jumpToDiv(i);
+            }
+        }
+        function jumpToDiv(index) {
+            let num = divIndex;
+            divIndex = index;
+            let $div = $(".contents .contents_title");
+            $div.eq(num).animate({"opacity":0},500);
+            $div.eq(num).css({"display":"none"});
+            $div.eq(divIndex).animate({"opacity":1},500);
+            $div.eq(divIndex).css({"display":"block"});
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="background"></div>
+    <div class="floating">
+        <div class="profile">
+            <a href="https://misaka-kuchiki.github.io/Daigakuin/Ken'sHome.html">
+                <img src="images/profile.png" alt="profile">
+            </a>
+        </div>
+        <div class="name">
+            <a href="https://misaka-kuchiki.github.io/Daigakuin/Ken'sHome.html">
+                <img src="images/name.png" alt="name">
+            </a>
+        </div>
+        <div class="menu_wrapper">
+            <ul class="menu">
+                <a id="home" href="https://misaka-kuchiki.github.io/Daigakuin/Ken'sHome.html">
+                    <li>
+                        ホーム
+                    </li>
+                </a>
+                <a id="profile" href="https://misaka-kuchiki.github.io/Daigakuin/Ken'sProfile.html">
+                    <li>
+                        プロフィール
+                    </li>
+                </a>
+                <a id="introduction" href="">
+                    <li>
+                        自己紹介
+                    </li>
+                </a>
+                <a id="project" href="https://misaka-kuchiki.github.io/Daigakuin/Ken'sProject.html">
+                    <li>
+                        プロジェクト
+                    </li>
+                </a>
+                <a id="else" href="">
+                    <li>
+                        その他
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="contents_title" id="page_1">
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        畳み込み神経ネットワークに基づく弱監視細粒度画像分類
+                    </h1>
+                    <h2>
+                        Weakly supervised fine-grained image classification based on convolutional neural network
+                    </h2>
+                    <h3>
+                        2020-06
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        伝統的方法に基づく顔置換（OpenCVによって）
+                    </h1>
+                    <h2>
+                        Face replacement based on traditional methods(By using OpenCV)
+                    </h2>
+                    <h3>
+                        2019-06
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        深層学習入門：手書き数字認識
+                    </h1>
+                    <h2>
+                        Getting started with deep learning: Handwritten digit recognition
+                    </h2>
+                    <h3>
+                        2019-05
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        OpenCVに基づくビデオ顔検出
+                    </h1>
+                    <h2>
+                        Video face detection based on OpenCV
+                    </h2>
+                    <h3>
+                        2019-04
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        OpenGLに基づく３Ｄシーンメイキング
+                    </h1>
+                    <h2>
+                        3D scene making based on OpenGL
+                    </h2>
+                    <h3>
+                        2018-12
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        OpenGLに基づくテトリス
+                    </h1>
+                    <h2>
+                        Tetris based on OpenGL
+                    </h2>
+                    <h3>
+                        2018-10
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" onclick="changeDiv('next')">NEXT PAGE</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contents_title" id="page_2">
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        OpenGLに関する簡単な課題
+                    </h1>
+                    <h2>
+                        Simple topics related to OpenGL
+                    </h2>
+                    <h3>
+                        2018-08
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        Javaに基づくチャットプログラム
+                    </h1>
+                    <h2>
+                        Chat program based on Java
+                    </h2>
+                    <h3>
+                        2018-06
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            <div class="post_preview">
+                <a href="">
+                    <h1>
+                        その他
+                    </h1>
+                    <h2>
+                        Others
+                    </h2>
+                </a>
+            </div>
+            <hr>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" onclick="changeDiv('pre')">PRE PAGE</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

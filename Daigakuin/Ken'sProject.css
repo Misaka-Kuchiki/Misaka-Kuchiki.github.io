@@ -1,0 +1,144 @@
+body{
+    padding: 0;margin: 0;
+}
+.wrapper{
+    position: relative;
+    min-width: 1600px;
+    height: 1008px;
+}
+.background{
+    background-image: url(images/background.jpg);
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
+.floating{
+    position: absolute;
+    left: 0;top: 0;
+    width: 12%;height: 100%;
+    background:rgba(275,275,275,0.60);
+}
+.profile img{
+    width: 100%;
+}
+.name img{
+    width: 100%;
+}
+.menu_wrapper{
+    width: 100%;
+}
+.menu{
+    padding-left: 18px;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu li{
+    line-height: 45px;
+    list-style: none;
+    font-size: 30px;
+    font-family: "UD Digi Kyokasho NK-R";
+    font-weight: bold;
+    color: black;
+}
+#project{
+    text-decoration: underline;
+    color: black;
+}
+.menu li:hover{
+    text-decoration: underline;
+    color: black;
+    transform: scale(1.1);
+    transition-duration: 1000ms;
+}
+.contents{
+    position: absolute;
+    width: 1200px;
+    height: 75%;
+    top: 0;bottom: 0;left: 12%;right: 0;
+    margin: auto;
+    border-radius: 36px;
+    background: rgba(255,255,255,0.6);
+}
+.contents_title{
+    position: absolute;
+    width: 96%;height: 96%;
+    top: 0;bottom: 0;left: 0;right: 0;
+    margin: auto;
+}
+.post_preview{
+    width: 100%;height: 12.5%;
+}
+.post_preview:hover{
+    opacity: 0.6;
+}
+.post_preview a{
+    text-decoration: none;
+    color: #303030;
+}
+.post_preview h1{
+    font-size: 32px;
+    padding: 6px;margin: 0;
+}
+.post_preview h2{
+    font-size: 20px;
+    font-weight: normal;
+    display: inline-block;vertical-align: middle;
+    padding: 6px;margin: 0;
+}
+.post_preview h3{
+    font-size: 20px;
+    font-weight: normal;
+    display: inline-block;vertical-align: middle;float: right;
+    padding: 6px;margin: 0;
+}
+.contents_title ul{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;margin: 0;
+}
+.contents_title ul li{
+    width: 180px;height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #3c3c3c;
+}
+.contents_title ul li:hover{
+    border: 0px;
+    background: rgba(32,160,190,0.8);
+}
+.contents_title ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "微软雅黑 Light";
+    font-weight: bold;
+    display: flex;display: block;
+    justify-content: center;align-items: center;
+    color: #303030;
+}
+.contents_title ul li a:hover{
+    color: #ffffff;
+}
+#page_1{
+    opacity: 1;
+    display: block;
+}
+#page_2{
+    opacity: 0;
+    display: none;
+}
+#page_1 ul li{
+    float: right;
+}
+#page_2 ul li{
+    float: left;
+}
