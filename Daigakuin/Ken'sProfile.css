@@ -88,9 +88,10 @@ body{
     font-family: 腾祥沁圆简-W4;
 }
 .wordInner li{
-    font-size: 24px;
+    font-size: 25px;
     line-height: 35px;
     padding-right: 5px;
+    font-family: "UD Digi Kyokasho N-R";
 }
 .popup{
     position: absolute;
