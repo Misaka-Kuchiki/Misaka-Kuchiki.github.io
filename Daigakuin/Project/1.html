@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>畳み込み神経ネットワークに基づく弱監視細粒度画像分類</title>
+    <link rel="icon" href="../images/tuba.ico">
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            showBackTop();
+            handleSidebar();
+        });
+        function showBackTop() {
+            $(window).scroll(function () {
+                let scroll_top = $(document).scrollTop();
+                console.log(scroll_top);
+                if (scroll_top > 360){
+                    $(".back_top").fadeIn(300);
+                }
+                else{
+                    $(".back_top").fadeOut(300);
+                }
+            })
+        }
+        function handleSidebar() {
+            $(window).scroll(function () {
+                let scroll_top = $(document).scrollTop();
+                console.log(scroll_top);
+                if (scroll_top > 600){
+                    $(".sidebar").css("position","fixed");
+                    $(".sidebar").css("top","20px");
+                }
+                else{
+                    $(".sidebar").css("position","relative");
+                    $(".sidebar").css("top","620px");
+                }
+            })
+        }
+        function BackToTop() {
+            $("html,body").animate({scrollTop:0},500);
+        }
+        function jumpToTitle(state) {
+            if (state == 1){
+                let top = $("#1_前言").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 2){
+                let top = $("#2_细粒度图像分类").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 3){
+                let top = $("#3_方法模型").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 4){
+                let top = $("#4_实验结果").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 5){
+                let top = $("#5_后记").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+        }
+    </script>
+</head>
+<body id="body">
+<div class="wrapper">
+    <div class="title">
+        <div class="title_BG">
+            <img src="../../DesignMaterial/liz&bluebird_lower.jpg">
+        </div>
+        <div class="title_name">
+            <h1>畳み込み神経ネットワークに基づく弱監視細粒度画像分類</h1>
+            <h2>Weakly supervised fine-grained image classification based on CNN</h2>
+            <h3>Posted on 2020-06</h3>
+        </div>
+    </div>
+    <div class="waveWrapper">
+        <div class="waveInner">
+            <div class="waveCover"></div>
+        </div>
+    </div>
+    <article>
+        <div class="content">
+            <h1 id="1_前言">1.前言</h1>
+            <p>
+                このプロジェクトは私の卒業論文のテーマとして完成しました。深層学習畳み込みニューラルネットワークを使用して、画像の特徴を正確に抽出し、さまざまなクラスに属するオブジェクトを効果的に分類する。このプロジェクトは深圳大学コンピュータとソフトウェア学院の2020年度優秀卒業論文選考に選ばれ、最終的に優秀論文(A+)が得られなかったのは残念でしたが、審査員からも高く評価されました(A)。
+                <br><br>
+                <img src="images/1_1.png" width="100%">
+            </p>
+            <h1 id="2_细粒度图像分类">2.きめ細かい画像分類</h1>
+            <p>
+                きめの細かい画像分類、この研究目標は、同じオブジェクトのさまざまなサブカテゴリに対してより詳細な分類を実行することです。たとえば、鳥が含まれている画像の場合、従来の粗視化画像分類では「鳥」カテゴリにのみ分類されます。きめの細かい画像分類には、この画像の鳥の特徴に基づいて、鳥を「クロアホウドリ」、「小さなツノメドリ」、または「灰色の翼のカモメ」に細分する必要があります。または、写真の車のロゴ、ライト、ボディなどの特徴に基づく単純な車の商標の代わりに、「BMW X1」、「Audi A4L」、および「Benz GLB」の特定のモデルを取得できます。
+                <br><br>
+                <img src="images/1_2.png" width="100%">
+                <br>
+                サブクラスではクラス間のわずかな違いとクラス内の大きな違いがあるため、きめ細かい画像の分類と認識は、従来の画像分析タスクよりも困難です。ただし、難易度が高いと、それに応じた高いメリットがもたらされます。たとえば、鳥や花などの生物学的対象をきめ細かく識別すると、専門家の助けがなくても、種の分類と識別を迅速かつ正確に完了できます。これは動物や植物の保護を大切にするのに役立ちます。車両のきめ細かい識別は、車両の検出と認識の効果を向上させ、類似の車両の誤判定率を減らし、正確な追跡を実現し、高度道路交通システムの開発を加速します。実生活におけるきめ細かい画像分析タスクの大きな可能性により、この研究に参加する学者がますます増えているため、近年、コンピュータビジョン研究において非常に人気があり、重要な研究トピックの1つになっています。
+                <br><br>
+                <img src="images/1_3.png" width="100%">
+            </p>
+            <h1 id="3_方法模型">3.方法とモデル</h1>
+            <p>
+                私が設計して提案したネットワークモデルは、<a href="https://www.cv-foundation.org/openaccess/content_iccv_2015/html/Lin_Bilinear_CNN_Models_ICCV_2015_paper.html" target="_blank">Linら</a>のネットワークモデルの改良に基づいています。その名前は、単ーパスバイリニアプーリング畳み込みニューラルネットワーク（Single Path Bilinear Pooling-Convolutional Neural Networks,SPBP-CNN）。
+                <br><br>
+                <img src="images/1_4.png" width="70%">
+                <br>
+                このモデルは、たった1つの畳み込みニューラルネットワークを使用して特徴を抽出し、抽出した特徴ベクトルをコピーして、2つの特徴ベクトルに対して外積演算を実行します。これは、いわゆるバイリニアプーリングです。これにより、ネットワークスペースを大幅に節約し、パラメーターの数を減らすことができます。次に、取得したバイリニア特徴が合計プーリングによって融合し、モデルとパラメータを特定の方法で最適化します。最後に、Softmaxレイヤーに入ると、モデルまたはテスト結果をトレーニングできます。
+                <br><br>
+                <img src="images/1_5.png" width="70%">
+                <br>
+                これは、SPBP-CNNモデルのネットワーク構造図です。有名なVGG-16畳み込みニューラルネットワークを模倣しました。
+            </p>
+            <h1 id="4_实验结果">4.実験結果</h1>
+            <p></p>
+            <h1 id="5_后记">5.追記</h1>
+            <p></p>
+        </div>
+        <div class="sidebar" id="side_bar">
+            <strong>Contents</strong>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(1)">前言</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(2)">きめ細かい画像分類</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(3)">方法とモデル</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(4)">実験結果</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(5)">追記</a>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <div class="back_top">
+        <a href="javascript:void(0)" onclick="BackToTop()" title="TOP">
+            <img src="../../../../DesignMaterial/top.png">
+        </a>
+    </div>
+    <footer id="footer">
+            <span class="copyright">
+                © MisakaKuchiki.2020-2020.
+            </span>
+    </footer>
+</div>
+</body>
+</html>

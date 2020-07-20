@@ -1,0 +1,141 @@
+body{
+    padding: 0;margin: auto;
+}
+.wrapper{
+    position: relative;
+    width: 100%; height: 17250px;
+    min-width: 1600px;
+    overflow: hidden;
+}
+.title{
+    position: absolute;
+    left: 0;top: 0;
+    width: 100%;height: auto;
+}
+.title_BG img{
+    width: 100%;height: 600px;
+}
+.title_name{
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+    width: 60%;height: 40%;
+    text-align: left;
+}
+.title_name h1{
+    padding: 0;margin: 0;
+    font-size: 60px;
+    font-family: "UD Digi Kyokasho NK-B";
+    color: #303030;
+}
+.title_name h2{
+    padding: 0;margin-top: 5px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #303030;
+}
+.title_name h3{
+    padding: 0;margin-top: 10px;
+    font-size: 32px;
+    font-family: "Edwardian Script ITC";
+    color: #3c3c3c;
+}
+.waveWrapper{
+    position: absolute;
+    left: 0;top: 458px;
+    width: 100%;height: 142px;
+    overflow: hidden;
+}
+.waveInner{
+    width: 1440px;height: 1440px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.waveCover::before{
+    content: '';
+    position: absolute;
+    left: -300%;top: 9%;
+    z-index: 10;
+    width: 700%;height: 700%;
+    background-color: rgba(225,255,255,0.7);
+    border-radius: 47%;
+    animation: waveAnimation 12s linear infinite;
+}
+.waveCover::after{
+    content: '';
+    position: absolute;
+    left: -300%;top: 9%;
+    z-index: 20;
+    width: 700%;height: 700%;
+    background-color: rgba(255,255,255,1);
+    border-radius: 49%;
+    animation: waveAnimation 12s linear infinite;
+}
+@keyframes waveAnimation {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.content{
+    position: absolute;
+    left: 0;right: 8%;top: 605px;
+    margin: auto;
+    width: 1000px;height: auto;
+}
+.content code{
+    background: rgba(255,136,126,0.5);
+    color: #ff0000;
+    font-family: 零零后举个爪;
+    font-weight: bold;
+}
+.content a{
+    color: #0F84FE;
+}
+.content h1{
+    padding: 10px; margin: 10px;
+    font-family: "UD Digi Kyokasho N-R";
+    font-size: 40px;
+    text-align: left;
+}
+.content p{
+    padding: 10px;margin: 10px;
+    font-family: "UD Digi Kyokasho N-R";
+    font-size: 25px;
+    text-align: left;
+}
+.content img{
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+.sidebar{
+    position: relative;
+    width: 300px;height: auto;
+    left: 1350px;top: 620px;
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+.sidebar strong{
+    padding-left: 20px;
+    font-size: 24px;
+}
+.sidebar ul{
+    margin-top: 10px;
+}
+.sidebar li{
+    list-style-type: decimal;
+    font-size: 20px;
+    line-height: 30px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
