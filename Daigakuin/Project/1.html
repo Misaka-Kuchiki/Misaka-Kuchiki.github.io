@@ -113,9 +113,37 @@
                 <img src="images/1_5.png" width="70%">
                 <br>
                 これは、SPBP-CNNモデルのネットワーク構造図です。有名なVGG-16畳み込みニューラルネットワークを模倣しました。
+                <br><br>
+                ネットワークを構築するためのプロセスコードは以下の通りです:
+                <br>
+                <img src="images/1_6.png" width="100%">
+                <br>
+                2 Convolutional layers <strong>→</strong> <span style="color: red">1 Max-pooling layer</span> <strong>→</strong> 2 Convolutional layers <strong>→</strong>
+                <br>
+                <span style="color: red">1 Max-pooling layer</span> <strong>→</strong> 3 Convolutional layers <strong>→</strong> <span style="color: red">1 Max-pooling layer</span> <strong>→</strong>
+                <br>
+                3 Convolutional layers <strong>→</strong> <span style="color: red">1 Max-pooling layer</span> <strong>→</strong> 3 Convolutional layers
+                <br><br>
+                最初に、448×448×3スケールの画像を畳み込みおよびプーリング操作にかけ、28×28×512スケールの特徴ベクトルを取得します。
+                <br><br>
+                <img src="images/1_7.png" width="60%">
+                <br>
+                次に、特徴ベクトルをコピーし、pytorchのtranspose関数を使用して次元を交換し、2つの特徴行列に対して外積演算（bmm関数）を実行して、バイリニ特徴ベクトルを取得します。そして、平方根と正則化の後、モデルが最適化され、最終的に1×1×784スケールの融合特徴ベクトルが取得されます。最後に、softmax分類層に入力して、トレーニングまたはテストを完了します。
             </p>
             <h1 id="4_实验结果">4.実験結果</h1>
-            <p></p>
+            <p>
+                このネットワークモデルとコードの有効性を確認するために、私はテスト用に2つの公開されているきめ細かい画像データセットを選択しました。鳥のデータセット<a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" target="_blank">（CUB-200-2011）</a>と飛行機のデータセット<a href="http://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/" target="_blank">（FGVC-Aircraft）</a>。
+                <br><br>
+                <img src="images/1_8.png" width="100%">
+                <br>
+                CUB-200-2011鳥のデータセットには、トレーニング画像5994枚とテスト画像5794枚を含む、合計200種類の鳥が含まれています。FGVC-Aircraft飛行機のデータセットには、トレーニング画像6667枚とテスト画像3333枚を含む、合計200種類の鳥が含まれています。<strong>テスト基準：正しい予測の数 / テストサンプルの総数 × 100%。</strong>
+                <br><br>
+                <img src="images/1_9.png" width="96%">
+                <br>
+                <img src="images/1_10.png" width="100%">
+                <br>
+                最後に、鳥のデータセットで84.38％の正解率、飛行機のデータセットで84.13%の正解率が得られました。このメソッドのコアは、バイリニアプーリング操作の使用です。まだ、バイリニアプーリングの有効性を検証するために、アブレーション実験も設計しました。
+            </p>
             <h1 id="5_后记">5.追記</h1>
             <p></p>
         </div>
