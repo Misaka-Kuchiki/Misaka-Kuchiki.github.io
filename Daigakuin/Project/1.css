@@ -82,8 +82,7 @@ body{
 }
 .content{
     position: absolute;
-    left: 0;right: 8%;top: 605px;
-    margin: auto;
+    left: 360px;top: 605px;
     width: 1000px;height: auto;
 }
 .content code{
@@ -116,7 +115,7 @@ body{
 .sidebar{
     position: relative;
     width: 300px;height: auto;
-    left: 78%;top: 620px;
+    left: 1400px;top: 620px;
     border-left: 1px solid rgba(0,0,0,0.3);
 }
 .sidebar strong{
