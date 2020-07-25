@@ -116,7 +116,7 @@ body{
 .sidebar{
     position: relative;
     width: 300px;height: auto;
-    left: 1350px;top: 620px;
+    left: 78%;top: 620px;
     border-left: 1px solid rgba(0,0,0,0.3);
 }
 .sidebar strong{
