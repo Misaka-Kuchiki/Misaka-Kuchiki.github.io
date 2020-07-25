@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>畳み込み神経ネットワークに基づく弱監視細粒度画像分類</title>
+    <title>畳み込みニューラルネットワークに基づく弱監視細粒度画像分類</title>
     <link rel="icon" href="../images/tuba.ico">
     <link rel="stylesheet" type="text/css" href="1.css">
     <script src="../js/jquery-3.5.1.min.js"></script>
@@ -18,7 +18,7 @@
             $(window).scroll(function () {
                 let scroll_top = $(document).scrollTop();
                 console.log(scroll_top);
-                if (scroll_top > 360){
+                if (scroll_top > 420){
                     $(".back_top").fadeIn(300);
                 }
                 else{
@@ -41,7 +41,7 @@
             })
         }
         function BackToTop() {
-            $("html,body").animate({scrollTop:0},500);
+            $("html,body").animate({scrollTop:0},600);
         }
         function jumpToTitle(state) {
             if (state == 1){
@@ -74,7 +74,7 @@
             <img src="../../DesignMaterial/liz&bluebird_lower.jpg">
         </div>
         <div class="title_name">
-            <h1>畳み込み神経ネットワークに基づく弱監視細粒度画像分類</h1>
+            <h1>畳み込みニューラルネットワークに基づく弱監視細粒度画像分類</h1>
             <h2>Weakly supervised fine-grained image classification based on CNN</h2>
             <h3>Posted on 2020-06</h3>
         </div>
@@ -142,10 +142,20 @@
                 <br>
                 <img src="images/1_10.png" width="100%">
                 <br>
-                最後に、鳥のデータセットで84.38％の正解率、飛行機のデータセットで84.13%の正解率が得られました。このメソッドのコアは、バイリニアプーリング操作の使用です。まだ、バイリニアプーリングの有効性を検証するために、アブレーション実験も設計しました。
+                最後に、鳥のデータセットで<strong>84.38％</strong>の正解率、飛行機のデータセットで<strong>84.13%</strong>の正解率が得られました。このメソッドのコアは、バイリニアプーリング操作の使用です。まだ、バイリニアプーリングの有効性を検証するために、アブレーション実験も設計しました。
+                <br><br>
+                バイリニアプーリングを最大プーリングと平均プーリングにそれぞれ置き換え、同じ実験環境で同じデータセットでテストしました。最終結果は次のとおりです：
+                <br>
+                <img src="images/1_11.png" width="100%">
+                <br>
+                結果は、特徴を線形的に融合する最大プーリングおよび平均プーリングと比較して、バイリニアプーリングの非線形融合方法は、特徴の表現能力を効果的に高め、それによって分類効果を最適化できることを示しています。
             </p>
             <h1 id="5_后记">5.追記</h1>
-            <p></p>
+            <p>
+                このプロジェクトは、ディープラーニングについての基本的な理解が得られただけでなく、この分野にも興味を持ったので、大学院生として研究を続けていきたいと思います。もちろん、大学生として作ったこのプロジェクトにはまだ多くの欠点がありますが、私はこれを新しい出発点として、一生懸命勉強し続けます。
+                <br><br>
+                以上です。
+            </p>
         </div>
         <div class="sidebar" id="side_bar">
             <strong>Contents</strong>
@@ -170,7 +180,7 @@
     </article>
     <div class="back_top">
         <a href="javascript:void(0)" onclick="BackToTop()" title="TOP">
-            <img src="../../../../DesignMaterial/top.png">
+            <img src="../../DesignMaterial/newTop.png">
         </a>
     </div>
 </div>
