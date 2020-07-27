@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OpenCVに基づくビデオ顔検出</title>
+    <link rel="icon" href="../images/tuba.ico">
+    <link rel="stylesheet" type="text/css" href="3.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            showBackTop();
+            handleSidebar();
+        });
+        function showBackTop() {
+            $(window).scroll(function () {
+                let scroll_top = $(document).scrollTop();
+                console.log(scroll_top);
+                if (scroll_top > 420){
+                    $(".back_top").fadeIn(300);
+                }
+                else{
+                    $(".back_top").fadeOut(300);
+                }
+            })
+        }
+        function handleSidebar() {
+            $(window).scroll(function () {
+                let scroll_top = $(document).scrollTop();
+                console.log(scroll_top);
+                if (scroll_top > 600){
+                    $(".sidebar").css("position","fixed");
+                    $(".sidebar").css("top","20px");
+                }
+                else{
+                    $(".sidebar").css("position","relative");
+                    $(".sidebar").css("top","620px");
+                }
+            })
+        }
+        function BackToTop() {
+            $("html,body").animate({scrollTop:0},600);
+        }
+        function jumpToTitle(state) {
+            if (state == 1){
+                let top = $("#1_实验要求").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 2){
+                let top = $("#2_实验过程").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+            else if (state == 3){
+                let top = $("#3_实验结果").offset().top;
+                $("html, body").animate({scrollTop:top},500);
+            }
+        }
+    </script>
+</head>
+<body id="body">
+<div class="wrapper">
+    <div class="title">
+        <div class="title_BG">
+            <img src="../../DesignMaterial/liz&bluebird_lower.jpg">
+        </div>
+        <div class="title_name">
+            <h1>OpenCVに基づくビデオ顔検出</h1>
+            <h2>Video face detection based on OpenCV</h2>
+            <h3>Posted on 2019-04</h3>
+        </div>
+    </div>
+    <div class="waveWrapper">
+        <div class="waveInner">
+            <div class="waveCover"></div>
+        </div>
+    </div>
+    <article>
+        <div class="content">
+            <h1 id="1_实验要求">1.実験要件</h1>
+            <p>
+                この実験は指定されたビデオを提供し、学生IDと等しい画像フレームの前景セグメンテーションおよび顔検出結果の出力を必要とし、各フレームで検出された顔のマトリックスフレームの位置座標を記録します。
+            </p>
+            <h1 id="2_实验过程">2.実験手順</h1>
+            <p>
+                まず、指定されたビデオをロードし、フレームごとにビデオを読み取ります。そして、OpenCv3.0のBackgroundSubtractorMOG2関数メソッドを使用して、前景のセグメンテーションを実行します。
+                <br><br>
+                BackgroundSubtractorMOG2、このアルゴリズムも混合正規分布を基にした前景・背景の領域分割アルゴリズムです。このアルゴリズムの重要な点は，画素毎に最適な混合数を選択する点です(前の例ではアルゴリズムを通してK個の正規分布を使っていた点を思い出してください)．照明の変化などといった動的なシーンに対する適応力が優れています。
+                <br><br>
+                <strong>
+                    Ptr&lt;backgroundsubtractormog2&gt; cv::createBackgroundSubtractorMOG2	(<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;int 	history = 500,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;double 	varThreshold = 16,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;bool 	detectShadows = true<br>
+                    )
+                </strong>
+                <br><br>
+                <strong>history</strong>パラメータは、背景のトレーニングに使用されるフレーム数で、デフォルトは500フレームです。この実験では、ビデオの最初の20フレームを使用します。
+                <br><br>
+                <strong>varThreshold</strong>パラメータは分散しきい値であり、現在のピクセルが前景か背景かを決定するために使用されます。デフォルトは16です。値が大きいほど感度が低くなります。この実験は、ビデオの特定の状況に応じて25に設定されています。
+                <br><br>
+                <strong>detecShadows</strong>パラメーターは、影を検出するかどうか、デフォルトはtrue検出です。影を検出すると、プログラムの実行時間が長くなります。この実験ビデオには影が含まれていないため、falseに設定されています。
+            </p>
+            <h1 id="3_实验结果">3.実験結果</h1>
+            <p>
+
+            </p>
+        </div>
+        <div class="sidebar" id="side_bar">
+            <strong>Contents</strong>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(1)">実験要件</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(2)">実験手順</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="jumpToTitle(3)">実験結果</a>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <div class="back_top">
+        <a href="javascript:void(0)" onclick="BackToTop()" title="TOP">
+            <img src="../../DesignMaterial/newTop.png">
+        </a>
+    </div>
+</div>
+</body>
+</html>
