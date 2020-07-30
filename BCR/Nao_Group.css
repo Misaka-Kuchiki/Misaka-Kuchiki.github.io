@@ -63,9 +63,6 @@ body{
     display: flex;display: block;
     justify-content: center;align-items: center;
 }
-.content_title li:hover{
-    background: #fff3e5;
-}
 #b1{
     background: #fff3e5;
 }
@@ -112,4 +109,22 @@ body{
     font-family: 腾祥沁圆简-W4;
     font-size: 27px;
     padding: 5px;
+}
+.arrange{
+    position: absolute;
+    left: 0;top: 300px;
+    width: 49%;height: 400px;
+}
+.arrange table{
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+}
+@font-face {
+    font-family: 零零后举个爪;
+    src: url("../DesignMaterial/profile_word.ttf");
+}
+@font-face {
+    font-family: 腾祥沁圆简-W4;
+    src: url("../DesignMaterial/W4.ttf");
 }
