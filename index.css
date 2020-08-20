@@ -180,6 +180,12 @@ body{
     display: block;
     border-radius: 30px;
 }
+.bodyProfile h3 a{
+    color: black;
+}
+.bodyProfile h3 a:hover{
+    text-decoration: none;
+}
 .footerWrap{
     position: absolute;
     width: 100%;
