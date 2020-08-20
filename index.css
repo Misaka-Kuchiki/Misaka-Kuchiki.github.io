@@ -1,0 +1,203 @@
+body{
+    padding: 0;margin: 0;
+    background-image: url(material/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.wrapper{
+    position: relative;
+    height: 3400px;
+}
+.headerWrap{
+    position: fixed;
+    width: 100%;height: 70px;
+    border-bottom: 3px solid #1565C0;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    z-index: 1;
+}
+.logo{
+    position: absolute;
+    padding: 0;margin: 0;
+    left: 3%;
+    width: auto;height: 70px;
+}
+.logo a{
+    text-decoration: none;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 70px;
+    color: black;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 忘了那个他;
+}
+.logo a img{
+    height: 60%;width: auto;
+    vertical-align: middle;
+}
+.logo a span{
+    height: 60%;width: auto;
+    vertical-align: middle;
+}
+.navigationList{
+    position: absolute;
+    padding: 0;margin: 0;
+    right: 3%;
+    width: auto;height: 70px;
+}
+.navigationList li{
+    float: left;
+    list-style: none;
+    height: 70px;line-height: 70px;
+    margin-left: 10px;margin-right: 10px;
+}
+.navigationList li:hover{
+    opacity: 0.6;
+}
+.navigationList a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 零零后举个爪;
+    color: black;
+}
+.contentWrap{
+    position: absolute;
+    top: 110px;left: 0;right: 0;
+    margin: auto;
+    width: 960px;height: 1500px;
+}
+.kumiko{
+    position: absolute;
+    top: 0;
+    width: 960px;height: 200px;
+    border-radius: 36px;
+    border: 3px solid #1565C0;
+    background: white;
+    background: rgba(255,255,255,0.8);
+}
+.kumikoInner{
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    width: 900px;height: 170px;
+    margin: auto;
+}
+.wordKumiko{
+    position: absolute;
+    left: 0;
+    width: 70%;height: 100%;
+}
+.wordKumiko p{
+    padding: 10px; margin: 0;
+    font-family: 零零后举个爪;
+}
+.imgKumiko{
+    position: absolute;
+    right: 0;
+    width: 30%;height: 100%;
+}
+.imgKumiko img{
+    position: absolute;
+    width: 80%;height: auto;
+    top: 0;bottom: 0;left: 0;right: 0;
+    margin: auto;
+}
+.dailyWrap,.blogWrap,.studyWrap,.travelWrap,.profileWrap{
+    position: absolute;
+    width: 960px;height: 550px;
+    border-radius: 36px;
+    border: 3px solid #1565C0;
+    background: white;
+    background: rgba(255,255,255,0.8);
+}
+.dailyWrap{
+    top: 250px;
+}
+.blogWrap{
+    top: 850px;
+}
+.studyWrap{
+    top: 1450px;
+}
+.travelWrap{
+    top: 2050px;
+}
+.profileWrap{
+    top: 2650px;
+}
+.dailyInner,.blogInner,.studyInner,.travelInner,.profileInner{
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    width: 900px;height: 520px;
+    margin: auto;
+}
+.headerDaily,.headerBlog,.headerStudy,.headerTravel,.headerProfile{
+    position: absolute;
+    top: 0;
+    width: 100%;height: 10%;
+}
+.headerDaily h2,.headerBlog h2,.headerStudy h2,.headerTravel h2,.headerProfile h2{
+    padding: 0;margin: 0;
+    height: 52px;
+    color: #1565C0;
+    font-weight:900;
+    font-family: 零零后举个爪;
+    display: flex;
+}
+.headerDaily h2 span,.headerBlog h2 span,.headerStudy h2 span,.headerTravel h2 span,.headerProfile h2 span{
+    line-height: 52px;
+    vertical-align: middle;
+}
+.headerDaily h2 img,.headerBlog h2 img,.headerStudy h2 img,.headerTravel h2 img,.headerProfile h2 img{
+    height: 52px;width: auto;
+}
+.bodyDaily,.bodyBlog,.bodyStudy,.bodyTravel,.bodyProfile{
+    position: absolute;
+    top: 10%;
+    width: 100%;height: 90%;
+    overflow-y: auto;
+}
+.bodyDaily_box{
+    width: 100%;height: auto;
+}
+.bodyDaily_box p{
+    margin-top: 5px;margin-bottom: 5px;padding-left: 5px;padding-right: 5px;
+    font-family: 零零后举个爪;
+    font-size: 25px;
+    font-weight: normal;
+}
+.bodyProfile h3{
+    font-family: 零零后举个爪;
+    font-size: 25px;
+    font-weight: normal;
+}
+.bodyProfile h3 img{
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+}
+.footerWrap{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.footerWrap a{
+    color: black;
+}
+.footerWrap a:hover{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 零零后举个爪;
+    src: url("material/after00.ttf");
+}
+@font-face {
+    font-family: 忘了那个他;
+    src: url("material/forget.ttf");
+}
