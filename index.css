@@ -162,6 +162,7 @@ body{
 }
 .bodyDaily_box,.bodyBlog_box,.bodyStudy_box{
     width: 100%;height: auto;
+    transition-duration: 400ms;
 }
 .bodyDaily_box:hover,.bodyBlog_box:hover,.bodyStudy_box:hover{
     transform: scale(0.98);
@@ -193,6 +194,35 @@ body{
 }
 .bodyProfile h3 a:hover{
     text-decoration: none;
+}
+.musicWrap{
+    position: fixed;
+    left: 10px;bottom: 10px;
+    width: 180px;height: 45px;
+    border: 1px solid #1565C0;
+    border-radius: 10px;
+    background: white;
+    background: rgba(255,255,255,0.4);
+}
+.musicWrap a{
+    text-decoration: none;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 45px;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "UD Digi Kyokasho NP-R";
+}
+.musicWrap a img{
+    padding-left: 2px;
+    height: 80%;width: auto;
+    vertical-align: middle;
+}
+.musicWrap a span{
+    height: 60%;width: auto;
+    vertical-align: middle;
 }
 .footerWrap{
     position: absolute;

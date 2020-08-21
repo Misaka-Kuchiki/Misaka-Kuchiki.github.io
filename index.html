@@ -32,6 +32,17 @@
                 $("html, body").animate({scrollTop:top},500);
             }
         }
+        function playPause() {
+            let music = document.getElementById('bgMusic');
+            let music_btn = document.getElementById('musicBtn');
+            if (music.paused){
+                music.play();
+                music_btn.src = 'material/pauseMusic.png';
+            }else{
+                music.pause();
+                music_btn.src = 'material/playMusic.png';
+            }
+        }
     </script>
 </head>
 <body>
@@ -222,6 +233,16 @@
                 </div>
             </div>
         </div>
+    </div>
+    <audio id="bgMusic" src="material/愛を見つけた場所.mp3" autoplay="autoplay" loop="loop"></audio>
+    <div id="music" class="musicWrap">
+        <a href="javascript:void(0)" onclick="playPause()">
+            <img src="material/pauseMusic.png" id="musicBtn">
+            <span>
+                愛を見つけた場所
+            </span>
+        </a>
+
     </div>
     <footer id="footer" class="footerWrap">
             <span class="copyright">
