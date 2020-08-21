@@ -160,14 +160,22 @@ body{
     width: 100%;height: 90%;
     overflow-y: auto;
 }
-.bodyDaily_box{
+.bodyDaily_box,.bodyBlog_box,.bodyStudy_box{
     width: 100%;height: auto;
 }
-.bodyDaily_box p{
+.bodyDaily_box:hover,.bodyBlog_box:hover,.bodyStudy_box:hover{
+    transform: scale(0.98);
+    transition-duration: 400ms;
+}
+.bodyDaily_box p,.bodyBlog_box p,.bodyStudy_box p{
     margin-top: 5px;margin-bottom: 5px;padding-left: 5px;padding-right: 5px;
     font-family: 零零后举个爪;
     font-size: 25px;
     font-weight: normal;
+}
+.bodyBlog_box a,.bodyStudy_box a{
+    text-decoration: none;
+    color: black;
 }
 .bodyProfile h3{
     font-family: 零零后举个爪;
