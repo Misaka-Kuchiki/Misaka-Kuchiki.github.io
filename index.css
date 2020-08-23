@@ -8,7 +8,7 @@ body{
 }
 .wrapper{
     position: relative;
-    height: 3500px;
+    height: 3450px;
 }
 .headerWrap{
     position: fixed;
@@ -245,7 +245,7 @@ body{
 }
 .musicWrap{
     position: fixed;
-    left: 10px;bottom: 30px;
+    left: 15px;bottom: 15px;
     width: 180px;height: 45px;
     border: 1px solid #1565C0;
     border-radius: 10px;
@@ -276,7 +276,7 @@ body{
     position: absolute;
     width: 100%;
     bottom: 0;
-    font-size: 1.2em;
+    font-size: 1vw;
     text-align: center;
 }
 .footerWrap a{
