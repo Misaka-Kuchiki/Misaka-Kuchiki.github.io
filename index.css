@@ -8,7 +8,7 @@ body{
 }
 .wrapper{
     position: relative;
-    height: 3400px;
+    height: 3500px;
 }
 .headerWrap{
     position: fixed;
@@ -43,22 +43,63 @@ body{
     height: 60%;width: auto;
     vertical-align: middle;
 }
-.navigationList{
+.navigationList_long{
     position: absolute;
     padding: 0;margin: 0;
     right: 3%;
     width: auto;height: 70px;
+    display: block;
 }
-.navigationList li{
+.navigationList_long li{
     float: left;
     list-style: none;
     height: 70px;line-height: 70px;
     margin-left: 10px;margin-right: 10px;
 }
-.navigationList li:hover{
+.navigationList_long li:hover{
     opacity: 0.6;
 }
-.navigationList a{
+.navigationList_long a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 零零后举个爪;
+    color: black;
+}
+.navigationList_short{
+    position: absolute;
+    margin:auto;
+    top: 0;bottom: 0;right: 1%;
+    width: 100px;height: 70px;
+    display: none;
+}
+.navigationList_short img{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    margin: auto;
+}
+.navigationList_short ul{
+    position: absolute;
+    padding: 0;margin: 0;
+    top: 70px;
+    width: 100px;height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    display: none;
+}
+.navigationList_short:hover ul{
+    display: block;
+}
+.navigationList_short ul li{
+    list-style: none;
+    text-align: center;
+    height: 50px;line-height: 50px;
+}
+.navigationList_short ul li:hover{
+    opacity: 0.6;
+}
+.navigationList_short a{
     text-decoration: none;
     font-size: 30px;
     font-family: 零零后举个爪;
@@ -174,6 +215,13 @@ body{
     font-size: 25px;
     font-weight: normal;
 }
+.bodyDaily_box a{
+    color: #1565C0;
+}
+.bodyDaily_box img{
+    height: 100px;width: auto;
+    padding-top: 5px;padding-bottom: 5px;padding-right: 5px;
+}
 .bodyBlog_box a,.bodyStudy_box a{
     text-decoration: none;
     color: black;
@@ -197,7 +245,7 @@ body{
 }
 .musicWrap{
     position: fixed;
-    left: 10px;bottom: 10px;
+    left: 10px;bottom: 30px;
     width: 180px;height: 45px;
     border: 1px solid #1565C0;
     border-radius: 10px;
@@ -228,7 +276,7 @@ body{
     position: absolute;
     width: 100%;
     bottom: 0;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
 }
 .footerWrap a{

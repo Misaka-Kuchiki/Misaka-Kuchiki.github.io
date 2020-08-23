@@ -10,6 +10,19 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
+        $(window).resize(function (){
+            changeNavigationList();
+        });
+        function changeNavigationList() {
+            var _width = document.body.clientWidth;
+            if(_width < 900){
+                $('#longNavigationList').css('display','none');
+                $('#shortNavigationList').css('display','block');
+            }else{
+                $('#longNavigationList').css('display','block');
+                $('#shortNavigationList').css('display','none');
+            }
+        }
         function jumpToDiv(state) {
             if (state == 'daily'){
                 let top = $("#daily").offset().top - 110;
@@ -55,7 +68,7 @@
                     <span>御坂朽木</span>
                 </a>
             </h1>
-            <ul class="navigationList">
+            <ul id="longNavigationList" class="navigationList_long">
                 <li class="daily">
                     <a href="javascript:void(0)" onclick="jumpToDiv('daily')">日常</a>
                 </li>
@@ -72,6 +85,26 @@
                     <a href="javascript:void(0)" onclick="jumpToDiv('profile')">关于我</a>
                 </li>
             </ul>
+            <div id="shortNavigationList" class="navigationList_short">
+                <img src="material/menu.png" height="80%">
+                <ul>
+                    <li class="daily">
+                        <a href="javascript:void(0)" onclick="jumpToDiv('daily')">日常</a>
+                    </li>
+                    <li class="blog">
+                        <a href="javascript:void(0)" onclick="jumpToDiv('blog')">博客</a>
+                    </li>
+                    <li class="study">
+                        <a href="javascript:void(0)" onclick="jumpToDiv('study')">学习</a>
+                    </li>
+                    <li class="travel">
+                        <a href="javascript:void(0)" onclick="jumpToDiv('travel')">巡礼</a>
+                    </li>
+                    <li class="profile">
+                        <a href="javascript:void(0)" onclick="jumpToDiv('profile')">关于我</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div id="content" class="contentWrap">
@@ -100,6 +133,22 @@
                     </h2>
                 </div>
                 <div class="bodyDaily">
+                    <div class="bodyDaily_box">
+                        <p>
+                            试一下带图片的碎碎念布局。かのかり头像四连。
+                            <br>
+                            <a href="/daily/20200823_1.jpg" target="_blank"><img src="daily/20200823_1.jpg"></a>
+                            <a href="/daily/20200823_2.jpg" target="_blank"><img src="daily/20200823_2.jpg"></a>
+                            <a href="/daily/20200823_3.jpg" target="_blank"><img src="daily/20200823_3.jpg"></a>
+                            <a href="/daily/20200823_4.jpg" target="_blank"><img src="daily/20200823_4.jpg"></a>
+                            <br>
+                            作者：<a href="https://www.pixiv.net/users/675934" target="_blank">usami.hakana</a>
+                            <br>
+                            <span style="float: right;font-size: 20px">2020/08/23 22:45</span>
+                            <br>
+                        </p>
+                    </div>
+                    <hr>
                     <div class="bodyDaily_box">
                         <p>
                             这两天会先把之前做好的blog和笔记链接贴上来，然后研究下MySQL和php看能不能做个动态更新的脚本以及弄个评论区什么的（挖个坑画个饼先）。
