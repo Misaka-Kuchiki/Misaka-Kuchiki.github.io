@@ -1,0 +1,80 @@
+body{
+    padding: 0;margin: 0;
+    background-image: url(../../material/travelBG.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.wrapper{
+    position: relative;
+    height: auto;
+}
+.headerWrap{
+    position: fixed;
+    width: 100%;height: 70px;
+    border-bottom: 3px solid #009AFF;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    z-index: 1;
+}
+.logo{
+    position: absolute;
+    padding: 0;margin: 0;
+    left: 3%;
+    width: auto;height: 70px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 忘了那个他;
+}
+.logo img{
+    height: 60%;width: auto;
+    vertical-align: middle;
+}
+.logo span{
+    height: 60%;width: auto;
+    vertical-align: middle;
+}
+.title{
+    position: absolute;
+    right: 3%;
+    padding: 0;margin: 0 auto;
+    width: auto;height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 忘了那个他;
+    font-size: 60px;
+    font-weight: normal;
+}
+.contentWrap{
+    position: absolute;
+    top: 110px;left: 0;right: 0;
+    margin: auto;
+    width: 960px;height: auto;
+    border-radius: 36px;
+    background: white;
+    background: rgba(255,255,255,0.8);
+}
+.contentWrap p{
+    margin: 20px;
+    font-family: 零零后举个爪;
+    font-size: 25px;
+    font-weight: normal;
+}
+.contentWrap img{
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+@font-face {
+    font-family: 零零后举个爪;
+    src: url("../../material/after00.ttf");
+}
+@font-face {
+    font-family: 忘了那个他;
+    src: url("../../material/forget.ttf");
+}
