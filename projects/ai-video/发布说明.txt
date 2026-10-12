@@ -1,0 +1,20 @@
+AI 创作资料发布说明
+
+目录：projects/ai-video/
+index.html：两份资料的总览入口。
+research/index.html：竞品研究报告。
+research/data.json：报告内的可下载数据，需一起上传。
+worldbuilding/index.html：IP 世界观与开发大纲。
+
+仓库根目录 index.html 的电脑和手机菜单已加入“AI 创作”。
+报告均为静态 HTML，无需安装依赖或执行构建。原始文档保留在原目录。
+
+上传本次修改的根目录 index.html 与完整 projects/ai-video/ 文件夹。
+若使用当前 master 分支发布，在 GitHub 仓库 Settings → Pages 设置：
+Source = Deploy from a branch，Branch = master，Folder = /(root)，Save。
+如仓库已有有效发布配置，请沿用实际发布分支。
+等待 GitHub Pages 部署成功，再分享：
+https://misaka-kuchiki.github.io/projects/ai-video/
+
+官方说明：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+本次仅整理本地文件，未执行 git commit、push 或线上发布。
