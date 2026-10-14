@@ -1,0 +1,33 @@
+{
+  "version": "brand-v028",
+  "date": "2026-10-14",
+  "character": "蛋卷",
+  "office": "蛋卷万事屋",
+  "account": "蛋卷万事屋",
+  "name_status": "用户明确确认",
+  "bio": "云上有间万事屋，住着一只卷毛小猫蛋卷。一根胡须捎来小心愿，蛋卷和你一起想办法。AI原创萌宠短剧｜念念不忘，必有回响。",
+  "bio_status": "用户原文定稿，标点与措辞保留",
+  "voice": {
+    "selected": "v4",
+    "status": "用户明确固定",
+    "source": "Qwen3-TTS用户提供试听",
+    "file": "../voice-auditions-20261014/v4.wav",
+    "sha256": "931a03f9e4a15b08407af3a456bc466eff78b5fdc103adf27468be7664f93df8",
+    "processing": "保留原始WAV，未变调、剪辑或归一化",
+    "generation_parameters": "未完整收齐，选择音色不等于参数已归档"
+  },
+  "avatar": {
+    "file": "danjuan-avatar-no-sign-v1.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "1eaad9dcc1278489be5c41368059036eefa00877cb0724d3eae8a7b8872d0016",
+    "direction_status": "用户选定附图的侧头倾听愿望胡须方向，并要求去名牌、干净重生成",
+    "asset_status": "新生成无名牌版本已交付，待用户目视验收",
+    "tool": "内置image_gen",
+    "prompt": "avatar-prompt.txt",
+    "source_reference": "用户本轮附图；仅内部保存参考原图",
+    "visual_check": "名牌与文字去除；卷毛、琥珀眼、嫩芽围兜、光环与星光、单根愿望胡须、旧邮务室背景保留；无合成叠图。生成结果不宣称像素级保持"
+  },
+  "layout": "当前定稿置于正文；历史命名、评分、头像调研、未选音色集中页底折叠，导视链接置底",
+  "platform_status": "尚未注册或修改短视频平台账户资料"
+}
