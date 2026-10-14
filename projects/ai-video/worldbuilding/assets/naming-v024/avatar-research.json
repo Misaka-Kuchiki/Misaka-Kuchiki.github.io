@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-14",
+  "method": "五个已核对身份并目视的B站账号头像；目的性样本，不是全行业统计。",
+  "samples": [
+    {
+      "name": "猫子柒来了",
+      "url": "https://api.bilibili.com/x/web-interface/view?bvid=BV1pnuR6SE96",
+      "code": 0,
+      "owner": {
+        "mid": 313310554,
+        "name": "猫子柒来了",
+        "face": "https://i1.hdslb.com/bfs/face/eb78720879203f31bec77df057815308bb2df083.jpg"
+      },
+      "file": "bili-1.jpg",
+      "bytes": 264532,
+      "profile": "https://space.bilibili.com/313310554",
+      "observed_at": "2026-10-14",
+      "pattern": "三猫合照＋浅色背景",
+      "visible": "三只猫靠近镜头，左猫戴棕色帽子；背景浅而简洁，没有角色名文字。",
+      "application": "通过角色组合与关系传递内容；简背景只是其中一种做法。我们暂不把未定身份的朋友加入头像。",
+      "scope": "本轮经B站公开视频官方接口owner.face核对身份，并实际目视图片；不假定其他平台头像相同或头像导致账号增长。"
+    },
+    {
+      "name": "云咪猫生哲学",
+      "url": "https://api.bilibili.com/x/web-interface/view?bvid=BV1ZbTQ6fEdv",
+      "code": 0,
+      "owner": {
+        "mid": 3546581336852771,
+        "name": "云咪猫生哲学",
+        "face": "https://i2.hdslb.com/bfs/face/e88d73d52e3417717f252a54ea62273dc34359b2.jpg"
+      },
+      "file": "bili-2.jpg",
+      "bytes": 436811,
+      "profile": "https://space.bilibili.com/3546581336852771",
+      "observed_at": "2026-10-14",
+      "pattern": "角色＋真实生活场景",
+      "visible": "橘白猫在菜市场蔬菜摊旁，带蓝色购物袋，头顶白色物件；背景保留摊位、菜和柜台。",
+      "application": "环境与道具能让“猫在过日子”一眼成立。可迁移为旧邮务室局部与工作动作。",
+      "scope": "本轮经B站公开视频官方接口owner.face核对身份，并实际目视图片；不假定其他平台头像相同或头像导致账号增长。"
+    },
+    {
+      "name": "荒蛋记录员",
+      "url": "https://api.bilibili.com/x/web-interface/view?bvid=BV1doQqB8EgM",
+      "code": 0,
+      "owner": {
+        "mid": 3632303408417140,
+        "name": "荒蛋记录员",
+        "face": "https://i1.hdslb.com/bfs/face/8a5ade21677d41a3e69d7e93f3793531ea89d017.jpg"
+      },
+      "file": "bili-3.jpg",
+      "bytes": 1011728,
+      "profile": "https://space.bilibili.com/3632303408417140",
+      "observed_at": "2026-10-14",
+      "pattern": "角色＋标志配饰＋日常物件",
+      "visible": "猫戴棕帽，前景是食物与红色饮料杯，后方是蓝天白云，没有账号名文字。",
+      "application": "内容信息也能来自前景物件，不一定依赖复杂地点；不能把竞品帽子和食物照搬给本主角。",
+      "scope": "本轮经B站公开视频官方接口owner.face核对身份，并实际目视图片；不假定其他平台头像相同或头像导致账号增长。"
+    },
+    {
+      "name": "飘莉哩",
+      "url": "https://api.bilibili.com/x/web-interface/view?bvid=BV1sx7H62E71",
+      "code": 0,
+      "owner": {
+        "mid": 24813285,
+        "name": "飘莉哩",
+        "face": "https://i0.hdslb.com/bfs/face/ee278f30cf99c178146902894ee4a433d9f3fd50.jpg"
+      },
+      "file": "bili-4.jpg",
+      "bytes": 236365,
+      "profile": "https://space.bilibili.com/24813285",
+      "observed_at": "2026-10-14",
+      "pattern": "表情近景＋弱化的室内背景",
+      "visible": "猫脸极近、张嘴，周围只露出少量室内环境；没有名称或明确职业道具。",
+      "application": "表情本身可以成为记忆点；本项目优先用机灵、倾听或亲近，避免委屈表情。",
+      "scope": "本轮经B站公开视频官方接口owner.face核对身份，并实际目视图片；不假定其他平台头像相同或头像导致账号增长。"
+    },
+    {
+      "name": "咪的妙脆角my",
+      "url": "https://api.bilibili.com/x/web-interface/view?bvid=BV1cztx6SE9q",
+      "code": 0,
+      "owner": {
+        "mid": 3706945380813530,
+        "name": "咪的妙脆角my",
+        "face": "https://i2.hdslb.com/bfs/face/1391e4f91d15f26daccebc276b6932836662cd16.jpg"
+      },
+      "file": "bili-5.jpg",
+      "bytes": 68160,
+      "profile": "https://space.bilibili.com/3706945380813530",
+      "observed_at": "2026-10-14",
+      "pattern": "人物／猫群＋大字品牌",
+      "visible": "浅背景上有人物和三只猫，底部醒目的“妙脆角 MAO”文字，猫头有小角形装饰。",
+      "application": "大字确实是可观察的做法；它属于品牌组合方案，不是“头像都要加字”的证据。我们只试两三字，避免塞完整机构名。",
+      "scope": "本轮经B站公开视频官方接口owner.face核对身份，并实际目视图片；不假定其他平台头像相同或头像导致账号增长。"
+    }
+  ],
+  "unverified": [
+    {
+      "name": "芝麻关门",
+      "reason": "公开读取超时／未取得可与主页用户身份核对的头像。"
+    },
+    {
+      "name": "MossPest喵派",
+      "reason": "只取得公开图片列表，未确认哪一张属于主页头像，不纳入视觉结论。"
+    }
+  ],
+  "conclusion": "样本同时存在简背景、生活场景、前景物件、表情与大字品牌；不足以证明纯色背景更优或某种方式提升涨粉。项目采用角色大头＋旧邮务室局部，并比较短名版。",
+  "own_avatar_review": {
+    "sizes_px": [
+      48,
+      96
+    ],
+    "observation": "48像素主要识别猫脸与光环，名牌文字偏小；96像素短名更容易辨认。04名牌移至下方中央后完整位于圆形安全区。未做点击率或真实平台流量测试。",
+    "evidence": "本地桌面／手机浏览器实际尺寸截图检查"
+  }
+}
