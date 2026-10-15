@@ -88,96 +88,8 @@
       "url": "https://www.tiktok.com/@fusioncritters/video/7625531398161566998"
     }
   ],
-  "priority": [
-    {
-      "id": "054",
-      "reason": "最贴近本项目：猫看见女生的PPT难题，去学、动手、留下文件。可借完整帮助链，再加入许愿与蛋卷协作。"
-    },
-    {
-      "id": "031",
-      "reason": "用钥匙等熟悉物件说明猫为什么这样理解人。值得学的是视角差异有依据，而不是凭空把电器叫怪物。"
-    },
-    {
-      "id": "041",
-      "reason": "猫从自己的身高拍人，只拍到腿；误会由角色身体自然产生，最后互相拍照得到可见成果。"
-    },
-    {
-      "id": "053",
-      "reason": "人平时善待猫，猫看到人难过便拿出自己珍视的东西。求助动机来自关心，猫不需要先受苦。"
-    },
-    {
-      "id": "014",
-      "reason": "买菜—收拾—下厨—共食是清楚的劳动链，尤其适合研究两猫怎样把一顿饭真正做出来。"
-    },
-    {
-      "id": "037",
-      "reason": "从字面误会找到真正需求，再用实际物件回应。可借“先搞懂要什么”，不复制蜜瓜包笑话。"
-    },
-    {
-      "id": "013",
-      "reason": "工作消息侵入下班时间的处境很贴近目标观众。困境应落在人身上，猫负责察觉和帮忙。"
-    },
-    {
-      "id": "030",
-      "reason": "用共同做过的一件小事恢复人与猫的相处；行动和道具承载回忆，胜过只说温暖台词。"
-    }
-  ],
-  "findings": [
-    {
-      "title": "先让人的难处可以被看见",
-      "body": "PPT文件、下班仍响的工作消息、刚坐下又被叫起，比“她压力很大”更具体。蛋卷单集应先选一个能在画面里看清、能在这一集改善的困难。",
-      "ids": [
-        "054",
-        "013",
-        "094"
-      ]
-    },
-    {
-      "title": "猫的误解要从猫的经验长出来",
-      "body": "地面视角只看见腿、钥匙意味着人要回家、食品名称被按字面理解，都有推理依据。它们让观众同时懂人的现实和猫的想法。",
-      "ids": [
-        "041",
-        "031",
-        "037"
-      ]
-    },
-    {
-      "title": "帮忙需要过程和交付物",
-      "body": "学习后留下文件、做饭后真的上桌、搬家后房间能住，才是可感知的解决。两猫各做一个关键动作，最后让人真正用上成果。",
-      "ids": [
-        "054",
-        "014",
-        "091"
-      ]
-    },
-    {
-      "title": "把回报放回共同生活",
-      "body": "分享一顿饭、拍成一张照片、重做一次夏日小仪式，能自然结束故事。蛋卷离开前，留出人与求助猫重新相处的时间。",
-      "ids": [
-        "014",
-        "041",
-        "030"
-      ]
-    },
-    {
-      "title": "高播放题材不一定适合本项目",
-      "body": "高播放作品中也存在终生劳作、离世或明确受伤受迫的表达，这些不用于蛋卷。但不能把猫之间自然的打闹混为虐猫：猫子柒的动作细节正是用户指出的活猫感来源。参考判断应落实到具体片段与角色感受。",
-      "ids": [
-        "009",
-        "021",
-        "082"
-      ]
-    },
-    {
-      "title": "事务所是入口，委托结果才是主体",
-      "body": "芝麻关门相关作品用固定办事场景串起不同动物的单元故事；可研究快速介绍委托与揭示动机。蛋卷的重心仍是下凡和共同解决眼前问题，不扩展办事流程。",
-      "ids": [
-        "098",
-        "099",
-        "100"
-      ]
-    }
-  ],
+  "priority": [],
+  "findings": [],
   "accounts": [
     {
       "name": "荒蛋记录员",
@@ -548,7 +460,8 @@
       "checked_at": "2026-10-15T02:20:46+08:00",
       "alternate_sources": [],
       "view_rank": 1,
-      "like_rank": 1
+      "like_rank": 1,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "002",
@@ -586,7 +499,8 @@
       "checked_at": "2026-10-15T02:20:48+08:00",
       "alternate_sources": [],
       "view_rank": 2,
-      "like_rank": 2
+      "like_rank": 2,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "003",
@@ -624,7 +538,8 @@
       "checked_at": "2026-10-15T02:11:59+08:00",
       "alternate_sources": [],
       "view_rank": 3,
-      "like_rank": 9
+      "like_rank": 9,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "004",
@@ -662,7 +577,8 @@
       "checked_at": "2026-10-15T02:20:51+08:00",
       "alternate_sources": [],
       "view_rank": 4,
-      "like_rank": 8
+      "like_rank": 8,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "005",
@@ -700,7 +616,8 @@
       "checked_at": "2026-10-15T02:20:52+08:00",
       "alternate_sources": [],
       "view_rank": 5,
-      "like_rank": 14
+      "like_rank": 14,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "095",
@@ -738,7 +655,8 @@
       "checked_at": "2026-10-15T02:22:55+08:00",
       "alternate_sources": [],
       "view_rank": 6,
-      "like_rank": 5
+      "like_rank": 5,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "006",
@@ -776,7 +694,8 @@
       "checked_at": "2026-10-15T02:20:53+08:00",
       "alternate_sources": [],
       "view_rank": 7,
-      "like_rank": 13
+      "like_rank": 13,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "067",
@@ -814,7 +733,8 @@
       "checked_at": "2026-10-15T02:11:59+08:00",
       "alternate_sources": [],
       "view_rank": 8,
-      "like_rank": 24
+      "like_rank": 24,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "007",
@@ -852,7 +772,8 @@
       "checked_at": "2026-10-15T02:20:55+08:00",
       "alternate_sources": [],
       "view_rank": 9,
-      "like_rank": 15
+      "like_rank": 15,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "053",
@@ -890,7 +811,8 @@
       "checked_at": "2026-10-15T02:21:57+08:00",
       "alternate_sources": [],
       "view_rank": 10,
-      "like_rank": 40
+      "like_rank": 40,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "082",
@@ -928,7 +850,8 @@
       "checked_at": "2026-10-15T02:22:38+08:00",
       "alternate_sources": [],
       "view_rank": 11,
-      "like_rank": 57
+      "like_rank": 57,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "045",
@@ -966,7 +889,8 @@
       "checked_at": "2026-10-15T02:12:00+08:00",
       "alternate_sources": [],
       "view_rank": 12,
-      "like_rank": 41
+      "like_rank": 41,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "054",
@@ -1004,7 +928,8 @@
       "checked_at": "2026-10-15T02:21:58+08:00",
       "alternate_sources": [],
       "view_rank": 13,
-      "like_rank": 46
+      "like_rank": 46,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "086",
@@ -1042,7 +967,8 @@
       "checked_at": "2026-10-15T02:22:43+08:00",
       "alternate_sources": [],
       "view_rank": 14,
-      "like_rank": 43
+      "like_rank": 43,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "083",
@@ -1080,7 +1006,8 @@
       "checked_at": "2026-10-15T02:12:02+08:00",
       "alternate_sources": [],
       "view_rank": 15,
-      "like_rank": 48
+      "like_rank": 48,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "055",
@@ -1118,7 +1045,8 @@
       "checked_at": "2026-10-15T02:21:59+08:00",
       "alternate_sources": [],
       "view_rank": 16,
-      "like_rank": 64
+      "like_rank": 64,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "021",
@@ -1156,7 +1084,8 @@
       "checked_at": "2026-10-15T02:21:13+08:00",
       "alternate_sources": [],
       "view_rank": 17,
-      "like_rank": 4
+      "like_rank": 4,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "087",
@@ -1194,7 +1123,8 @@
       "checked_at": "2026-10-15T02:22:44+08:00",
       "alternate_sources": [],
       "view_rank": 18,
-      "like_rank": 49
+      "like_rank": 49,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "056",
@@ -1232,7 +1162,8 @@
       "checked_at": "2026-10-15T02:22:01+08:00",
       "alternate_sources": [],
       "view_rank": 19,
-      "like_rank": 21
+      "like_rank": 21,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "008",
@@ -1270,7 +1201,8 @@
       "checked_at": "2026-10-15T02:20:56+08:00",
       "alternate_sources": [],
       "view_rank": 20,
-      "like_rank": 19
+      "like_rank": 19,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "093",
@@ -1308,7 +1240,8 @@
       "checked_at": "2026-10-15T02:22:52+08:00",
       "alternate_sources": [],
       "view_rank": 21,
-      "like_rank": 55
+      "like_rank": 55,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "022",
@@ -1346,7 +1279,8 @@
       "checked_at": "2026-10-15T02:21:14+08:00",
       "alternate_sources": [],
       "view_rank": 22,
-      "like_rank": 6
+      "like_rank": 6,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "057",
@@ -1384,7 +1318,8 @@
       "checked_at": "2026-10-15T02:12:01+08:00",
       "alternate_sources": [],
       "view_rank": 23,
-      "like_rank": 37
+      "like_rank": 37,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "092",
@@ -1422,7 +1357,8 @@
       "checked_at": "2026-10-15T02:22:51+08:00",
       "alternate_sources": [],
       "view_rank": 24,
-      "like_rank": 56
+      "like_rank": 56,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "023",
@@ -1460,7 +1396,8 @@
       "checked_at": "2026-10-15T02:21:15+08:00",
       "alternate_sources": [],
       "view_rank": 25,
-      "like_rank": 11
+      "like_rank": 11,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "090",
@@ -1498,7 +1435,8 @@
       "checked_at": "2026-10-15T02:22:48+08:00",
       "alternate_sources": [],
       "view_rank": 26,
-      "like_rank": 58
+      "like_rank": 58,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "088",
@@ -1536,7 +1474,8 @@
       "checked_at": "2026-10-15T02:22:45+08:00",
       "alternate_sources": [],
       "view_rank": 27,
-      "like_rank": 51
+      "like_rank": 51,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "091",
@@ -1574,7 +1513,8 @@
       "checked_at": "2026-10-15T02:22:49+08:00",
       "alternate_sources": [],
       "view_rank": 28,
-      "like_rank": 52
+      "like_rank": 52,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "009",
@@ -1623,7 +1563,8 @@
         }
       ],
       "view_rank": 29,
-      "like_rank": 3
+      "like_rank": 3,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "089",
@@ -1661,7 +1602,8 @@
       "checked_at": "2026-10-15T02:22:47+08:00",
       "alternate_sources": [],
       "view_rank": 30,
-      "like_rank": 42
+      "like_rank": 42,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "010",
@@ -1699,7 +1641,8 @@
       "checked_at": "2026-10-15T02:12:03+08:00",
       "alternate_sources": [],
       "view_rank": 31,
-      "like_rank": 22
+      "like_rank": 22,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "058",
@@ -1737,7 +1680,8 @@
       "checked_at": "2026-10-15T02:22:03+08:00",
       "alternate_sources": [],
       "view_rank": 32,
-      "like_rank": 50
+      "like_rank": 50,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "024",
@@ -1775,7 +1719,8 @@
       "checked_at": "2026-10-15T02:21:16+08:00",
       "alternate_sources": [],
       "view_rank": 33,
-      "like_rank": 10
+      "like_rank": 10,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "059",
@@ -1813,7 +1758,8 @@
       "checked_at": "2026-10-15T02:22:05+08:00",
       "alternate_sources": [],
       "view_rank": 34,
-      "like_rank": 26
+      "like_rank": 26,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "060",
@@ -1851,7 +1797,8 @@
       "checked_at": "2026-10-15T02:22:06+08:00",
       "alternate_sources": [],
       "view_rank": 35,
-      "like_rank": 32
+      "like_rank": 32,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "046",
@@ -1889,7 +1836,8 @@
       "checked_at": "2026-10-15T02:21:46+08:00",
       "alternate_sources": [],
       "view_rank": 36,
-      "like_rank": 59
+      "like_rank": 59,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "084",
@@ -1927,7 +1875,8 @@
       "checked_at": "2026-10-15T02:22:40+08:00",
       "alternate_sources": [],
       "view_rank": 37,
-      "like_rank": 62
+      "like_rank": 62,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "029",
@@ -1965,7 +1914,8 @@
       "checked_at": "2026-10-15T02:11:59+08:00",
       "alternate_sources": [],
       "view_rank": 38,
-      "like_rank": 25
+      "like_rank": 25,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "080",
@@ -2003,7 +1953,8 @@
       "checked_at": "2026-10-15T02:12:03+08:00",
       "alternate_sources": [],
       "view_rank": 39,
-      "like_rank": 54
+      "like_rank": 54,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "033",
@@ -2041,7 +1992,8 @@
       "checked_at": "2026-10-15T02:21:27+08:00",
       "alternate_sources": [],
       "view_rank": 40,
-      "like_rank": 12
+      "like_rank": 12,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "085",
@@ -2079,7 +2031,8 @@
       "checked_at": "2026-10-15T02:22:41+08:00",
       "alternate_sources": [],
       "view_rank": 41,
-      "like_rank": 70
+      "like_rank": 70,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "034",
@@ -2117,7 +2070,8 @@
       "checked_at": "2026-10-15T02:21:28+08:00",
       "alternate_sources": [],
       "view_rank": 42,
-      "like_rank": 7
+      "like_rank": 7,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "025",
@@ -2155,7 +2109,8 @@
       "checked_at": "2026-10-15T02:21:17+08:00",
       "alternate_sources": [],
       "view_rank": 43,
-      "like_rank": 18
+      "like_rank": 18,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "026",
@@ -2193,7 +2148,8 @@
       "checked_at": "2026-10-15T02:21:19+08:00",
       "alternate_sources": [],
       "view_rank": 44,
-      "like_rank": 17
+      "like_rank": 17,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "027",
@@ -2231,7 +2187,8 @@
       "checked_at": "2026-10-15T02:21:20+08:00",
       "alternate_sources": [],
       "view_rank": 45,
-      "like_rank": 16
+      "like_rank": 16,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "011",
@@ -2269,7 +2226,8 @@
       "checked_at": "2026-10-15T02:21:00+08:00",
       "alternate_sources": [],
       "view_rank": 46,
-      "like_rank": 66
+      "like_rank": 66,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "035",
@@ -2307,7 +2265,8 @@
       "checked_at": "2026-10-15T02:11:59+08:00",
       "alternate_sources": [],
       "view_rank": 47,
-      "like_rank": 28
+      "like_rank": 28,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "081",
@@ -2345,7 +2304,8 @@
       "checked_at": "2026-10-15T02:22:36+08:00",
       "alternate_sources": [],
       "view_rank": 48,
-      "like_rank": 67
+      "like_rank": 67,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "028",
@@ -2383,7 +2343,8 @@
       "checked_at": "2026-10-15T02:11:58+08:00",
       "alternate_sources": [],
       "view_rank": 49,
-      "like_rank": 20
+      "like_rank": 20,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "030",
@@ -2421,7 +2382,8 @@
       "checked_at": "2026-10-15T02:21:23+08:00",
       "alternate_sources": [],
       "view_rank": 50,
-      "like_rank": 38
+      "like_rank": 38,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "061",
@@ -2459,7 +2421,8 @@
       "checked_at": "2026-10-15T02:22:07+08:00",
       "alternate_sources": [],
       "view_rank": 51,
-      "like_rank": 78
+      "like_rank": 78,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "031",
@@ -2497,7 +2460,8 @@
       "checked_at": "2026-10-15T02:21:25+08:00",
       "alternate_sources": [],
       "view_rank": 52,
-      "like_rank": 33
+      "like_rank": 33,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "047",
@@ -2535,7 +2499,8 @@
       "checked_at": "2026-10-15T02:21:47+08:00",
       "alternate_sources": [],
       "view_rank": 53,
-      "like_rank": 84
+      "like_rank": 84,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "048",
@@ -2573,7 +2538,8 @@
       "checked_at": "2026-10-15T02:21:49+08:00",
       "alternate_sources": [],
       "view_rank": 54,
-      "like_rank": 75
+      "like_rank": 75,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "032",
@@ -2611,7 +2577,8 @@
       "checked_at": "2026-10-15T02:21:26+08:00",
       "alternate_sources": [],
       "view_rank": 55,
-      "like_rank": 36
+      "like_rank": 36,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "036",
@@ -2649,7 +2616,8 @@
       "checked_at": "2026-10-15T02:21:32+08:00",
       "alternate_sources": [],
       "view_rank": 56,
-      "like_rank": 23
+      "like_rank": 23,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "049",
@@ -2687,7 +2655,8 @@
       "checked_at": "2026-10-15T02:21:51+08:00",
       "alternate_sources": [],
       "view_rank": 57,
-      "like_rank": 77
+      "like_rank": 77,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "062",
@@ -2725,7 +2694,8 @@
       "checked_at": "2026-10-15T02:22:08+08:00",
       "alternate_sources": [],
       "view_rank": 58,
-      "like_rank": 53
+      "like_rank": 53,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "098",
@@ -2774,7 +2744,8 @@
         }
       ],
       "view_rank": 59,
-      "like_rank": 79
+      "like_rank": 79,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "050",
@@ -2812,7 +2783,8 @@
       "checked_at": "2026-10-15T02:21:52+08:00",
       "alternate_sources": [],
       "view_rank": 60,
-      "like_rank": 65
+      "like_rank": 65,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "037",
@@ -2850,7 +2822,8 @@
       "checked_at": "2026-10-15T02:21:33+08:00",
       "alternate_sources": [],
       "view_rank": 61,
-      "like_rank": 31
+      "like_rank": 31,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "096",
@@ -2888,7 +2861,8 @@
       "checked_at": "2026-10-15T02:12:02+08:00",
       "alternate_sources": [],
       "view_rank": 62,
-      "like_rank": 97
+      "like_rank": 97,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "097",
@@ -2926,7 +2900,8 @@
       "checked_at": "2026-10-15T02:22:57+08:00",
       "alternate_sources": [],
       "view_rank": 63,
-      "like_rank": 71
+      "like_rank": 71,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "038",
@@ -2964,7 +2939,8 @@
       "checked_at": "2026-10-15T02:21:35+08:00",
       "alternate_sources": [],
       "view_rank": 64,
-      "like_rank": 29
+      "like_rank": 29,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "051",
@@ -3002,7 +2978,8 @@
       "checked_at": "2026-10-15T02:21:54+08:00",
       "alternate_sources": [],
       "view_rank": 65,
-      "like_rank": 85
+      "like_rank": 85,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "039",
@@ -3040,7 +3017,8 @@
       "checked_at": "2026-10-15T02:21:36+08:00",
       "alternate_sources": [],
       "view_rank": 66,
-      "like_rank": 34
+      "like_rank": 34,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "040",
@@ -3078,7 +3056,8 @@
       "checked_at": "2026-10-15T02:21:37+08:00",
       "alternate_sources": [],
       "view_rank": 67,
-      "like_rank": 30
+      "like_rank": 30,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "042",
@@ -3116,7 +3095,8 @@
       "checked_at": "2026-10-15T02:21:40+08:00",
       "alternate_sources": [],
       "view_rank": 68,
-      "like_rank": 39
+      "like_rank": 39,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "043",
@@ -3154,7 +3134,8 @@
       "checked_at": "2026-10-15T02:21:42+08:00",
       "alternate_sources": [],
       "view_rank": 69,
-      "like_rank": 44
+      "like_rank": 44,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "044",
@@ -3192,7 +3173,8 @@
       "checked_at": "2026-10-15T02:21:43+08:00",
       "alternate_sources": [],
       "view_rank": 70,
-      "like_rank": 27
+      "like_rank": 27,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "041",
@@ -3230,7 +3212,8 @@
       "checked_at": "2026-10-14T18:38:32.164Z",
       "alternate_sources": [],
       "view_rank": 71,
-      "like_rank": 35
+      "like_rank": 35,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "063",
@@ -3268,7 +3251,8 @@
       "checked_at": "2026-10-15T02:12:01+08:00",
       "alternate_sources": [],
       "view_rank": 72,
-      "like_rank": 86
+      "like_rank": 86,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "064",
@@ -3306,7 +3290,8 @@
       "checked_at": "2026-10-15T02:22:11+08:00",
       "alternate_sources": [],
       "view_rank": 73,
-      "like_rank": 82
+      "like_rank": 82,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "068",
@@ -3344,7 +3329,8 @@
       "checked_at": "2026-10-15T02:22:17+08:00",
       "alternate_sources": [],
       "view_rank": 74,
-      "like_rank": 63
+      "like_rank": 63,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "070",
@@ -3382,7 +3368,8 @@
       "checked_at": "2026-10-15T02:12:00+08:00",
       "alternate_sources": [],
       "view_rank": 75,
-      "like_rank": 45
+      "like_rank": 45,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "012",
@@ -3420,7 +3407,8 @@
       "checked_at": "2026-10-15T02:21:01+08:00",
       "alternate_sources": [],
       "view_rank": 76,
-      "like_rank": 61
+      "like_rank": 61,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "069",
@@ -3458,7 +3446,8 @@
       "checked_at": "2026-10-15T02:22:18+08:00",
       "alternate_sources": [],
       "view_rank": 77,
-      "like_rank": 73
+      "like_rank": 73,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "013",
@@ -3496,7 +3485,8 @@
       "checked_at": "2026-10-15T02:21:02+08:00",
       "alternate_sources": [],
       "view_rank": 78,
-      "like_rank": 47
+      "like_rank": 47,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "094",
@@ -3534,7 +3524,8 @@
       "checked_at": "2026-10-15T02:22:53+08:00",
       "alternate_sources": [],
       "view_rank": 79,
-      "like_rank": 60
+      "like_rank": 60,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "014",
@@ -3572,7 +3563,8 @@
       "checked_at": "2026-10-15T02:21:04+08:00",
       "alternate_sources": [],
       "view_rank": 80,
-      "like_rank": 72
+      "like_rank": 72,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "015",
@@ -3610,7 +3602,8 @@
       "checked_at": "2026-10-15T02:21:05+08:00",
       "alternate_sources": [],
       "view_rank": 81,
-      "like_rank": 83
+      "like_rank": 83,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "016",
@@ -3648,7 +3641,8 @@
       "checked_at": "2026-10-15T02:21:06+08:00",
       "alternate_sources": [],
       "view_rank": 82,
-      "like_rank": 92
+      "like_rank": 92,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "017",
@@ -3686,7 +3680,8 @@
       "checked_at": "2026-10-15T02:21:07+08:00",
       "alternate_sources": [],
       "view_rank": 83,
-      "like_rank": 87
+      "like_rank": 87,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "018",
@@ -3724,7 +3719,8 @@
       "checked_at": "2026-10-15T02:21:09+08:00",
       "alternate_sources": [],
       "view_rank": 84,
-      "like_rank": 76
+      "like_rank": 76,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "019",
@@ -3762,7 +3758,8 @@
       "checked_at": "2026-10-15T02:21:10+08:00",
       "alternate_sources": [],
       "view_rank": 85,
-      "like_rank": 68
+      "like_rank": 68,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "020",
@@ -3800,7 +3797,8 @@
       "checked_at": "2026-10-15T02:21:12+08:00",
       "alternate_sources": [],
       "view_rank": 86,
-      "like_rank": 81
+      "like_rank": 81,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "071",
@@ -3838,7 +3836,8 @@
       "checked_at": "2026-10-15T02:22:21+08:00",
       "alternate_sources": [],
       "view_rank": 87,
-      "like_rank": 74
+      "like_rank": 74,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "072",
@@ -3876,7 +3875,8 @@
       "checked_at": "2026-10-15T02:22:23+08:00",
       "alternate_sources": [],
       "view_rank": 88,
-      "like_rank": 80
+      "like_rank": 80,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "073",
@@ -3914,7 +3914,8 @@
       "checked_at": "2026-10-15T02:22:24+08:00",
       "alternate_sources": [],
       "view_rank": 89,
-      "like_rank": 69
+      "like_rank": 69,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "065",
@@ -3952,7 +3953,8 @@
       "checked_at": "2026-10-15T02:22:13+08:00",
       "alternate_sources": [],
       "view_rank": 90,
-      "like_rank": 89
+      "like_rank": 89,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "066",
@@ -3990,7 +3992,8 @@
       "checked_at": "2026-10-15T02:22:14+08:00",
       "alternate_sources": [],
       "view_rank": 91,
-      "like_rank": 96
+      "like_rank": 96,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "074",
@@ -4028,7 +4031,8 @@
       "checked_at": "2026-10-15T02:22:26+08:00",
       "alternate_sources": [],
       "view_rank": 92,
-      "like_rank": 93
+      "like_rank": 93,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "075",
@@ -4066,7 +4070,8 @@
       "checked_at": "2026-10-15T02:22:27+08:00",
       "alternate_sources": [],
       "view_rank": 93,
-      "like_rank": 95
+      "like_rank": 95,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "076",
@@ -4104,7 +4109,8 @@
       "checked_at": "2026-10-15T02:22:29+08:00",
       "alternate_sources": [],
       "view_rank": 94,
-      "like_rank": 88
+      "like_rank": 88,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "077",
@@ -4142,7 +4148,8 @@
       "checked_at": "2026-10-15T02:22:30+08:00",
       "alternate_sources": [],
       "view_rank": 95,
-      "like_rank": 94
+      "like_rank": 94,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "078",
@@ -4180,7 +4187,8 @@
       "checked_at": "2026-10-15T02:22:32+08:00",
       "alternate_sources": [],
       "view_rank": 96,
-      "like_rank": 91
+      "like_rank": 91,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "079",
@@ -4218,7 +4226,8 @@
       "checked_at": "2026-10-15T02:22:33+08:00",
       "alternate_sources": [],
       "view_rank": 97,
-      "like_rank": 90
+      "like_rank": 90,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "052",
@@ -4256,7 +4265,8 @@
       "checked_at": "2026-10-15T02:21:55+08:00",
       "alternate_sources": [],
       "view_rank": 98,
-      "like_rank": 98
+      "like_rank": 98,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "099",
@@ -4294,7 +4304,8 @@
       "checked_at": "2026-10-15T02:23:01+08:00",
       "alternate_sources": [],
       "view_rank": 99,
-      "like_rank": 99
+      "like_rank": 99,
+      "research_status": "rejected_by_user"
     },
     {
       "id": "100",
@@ -4332,7 +4343,107 @@
       "checked_at": "2026-10-15T02:23:02+08:00",
       "alternate_sources": [],
       "view_rank": 100,
-      "like_rank": 100
+      "like_rank": 100,
+      "research_status": "rejected_by_user"
     }
-  ]
+  ],
+  "research_status": {
+    "status": "rejected_by_user",
+    "date": "2026-10-15",
+    "reason": "用户明确反馈：昨晚100条剧情库参考意义不大，调研方向和方式是错的。",
+    "current_use": "仅保留历史，不作为当前研究、案例推荐或脚本创作依据；不继续按此方法扩充。",
+    "current_report": "https://misaka-kuchiki.github.io/projects/ai-video/research/#cat-human-resonance"
+  },
+  "archived_priority": [
+    {
+      "id": "054",
+      "reason": "最贴近本项目：猫看见女生的PPT难题，去学、动手、留下文件。可借完整帮助链，再加入许愿与蛋卷协作。"
+    },
+    {
+      "id": "031",
+      "reason": "用钥匙等熟悉物件说明猫为什么这样理解人。值得学的是视角差异有依据，而不是凭空把电器叫怪物。"
+    },
+    {
+      "id": "041",
+      "reason": "猫从自己的身高拍人，只拍到腿；误会由角色身体自然产生，最后互相拍照得到可见成果。"
+    },
+    {
+      "id": "053",
+      "reason": "人平时善待猫，猫看到人难过便拿出自己珍视的东西。求助动机来自关心，猫不需要先受苦。"
+    },
+    {
+      "id": "014",
+      "reason": "买菜—收拾—下厨—共食是清楚的劳动链，尤其适合研究两猫怎样把一顿饭真正做出来。"
+    },
+    {
+      "id": "037",
+      "reason": "从字面误会找到真正需求，再用实际物件回应。可借“先搞懂要什么”，不复制蜜瓜包笑话。"
+    },
+    {
+      "id": "013",
+      "reason": "工作消息侵入下班时间的处境很贴近目标观众。困境应落在人身上，猫负责察觉和帮忙。"
+    },
+    {
+      "id": "030",
+      "reason": "用共同做过的一件小事恢复人与猫的相处；行动和道具承载回忆，胜过只说温暖台词。"
+    }
+  ],
+  "archived_findings": [
+    {
+      "title": "先让人的难处可以被看见",
+      "body": "PPT文件、下班仍响的工作消息、刚坐下又被叫起，比“她压力很大”更具体。蛋卷单集应先选一个能在画面里看清、能在这一集改善的困难。",
+      "ids": [
+        "054",
+        "013",
+        "094"
+      ]
+    },
+    {
+      "title": "猫的误解要从猫的经验长出来",
+      "body": "地面视角只看见腿、钥匙意味着人要回家、食品名称被按字面理解，都有推理依据。它们让观众同时懂人的现实和猫的想法。",
+      "ids": [
+        "041",
+        "031",
+        "037"
+      ]
+    },
+    {
+      "title": "帮忙需要过程和交付物",
+      "body": "学习后留下文件、做饭后真的上桌、搬家后房间能住，才是可感知的解决。两猫各做一个关键动作，最后让人真正用上成果。",
+      "ids": [
+        "054",
+        "014",
+        "091"
+      ]
+    },
+    {
+      "title": "把回报放回共同生活",
+      "body": "分享一顿饭、拍成一张照片、重做一次夏日小仪式，能自然结束故事。蛋卷离开前，留出人与求助猫重新相处的时间。",
+      "ids": [
+        "014",
+        "041",
+        "030"
+      ]
+    },
+    {
+      "title": "高播放题材不一定适合本项目",
+      "body": "高播放作品中也存在终生劳作、离世或明确受伤受迫的表达，这些不用于蛋卷。但不能把猫之间自然的打闹混为虐猫：猫子柒的动作细节正是用户指出的活猫感来源。参考判断应落实到具体片段与角色感受。",
+      "ids": [
+        "009",
+        "021",
+        "082"
+      ]
+    },
+    {
+      "title": "事务所是入口，委托结果才是主体",
+      "body": "芝麻关门相关作品用固定办事场景串起不同动物的单元故事；可研究快速介绍委托与揭示动机。蛋卷的重心仍是下凡和共同解决眼前问题，不扩展办事流程。",
+      "ids": [
+        "098",
+        "099",
+        "100"
+      ]
+    }
+  ],
+  "user_findings_current_source": "../user-findings.json",
+  "user_findings_authority": "来自用户观察，正式依据见原竞品报告；不由本库推出。"
 }

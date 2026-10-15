@@ -5818,8 +5818,9 @@
       "这个人的难处，是否能让观众想到自己的经历？",
       "两猫的实际帮助，是否回应了这个具体难处？"
     ],
-    "revision": "修正之前把猫子柒8条样本一律覆盖为反面参考的做法：021/023/024/025/028恢复为结构参考；022/026/027保留针对具体风险片段的提示，不据此否定账号的活猫感。",
     "new_sampling": false,
-    "metrics_unchanged": true
+    "metrics_unchanged": true,
+    "current_report": "https://misaka-kuchiki.github.io/projects/ai-video/research/#cat-human-resonance",
+    "authority_note": "两项结论来自用户本人的持续调研，写入原竞品调研报告；与被否定的100条调研方法分开。"
   }
 }
